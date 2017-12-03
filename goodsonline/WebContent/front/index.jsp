@@ -292,9 +292,9 @@
 		<div class="container">
 			<h2 class="hdng"> Organic<span><br>Drinks&Dessert</span><br> for u</h2>
 			<p>Try our best to make your day special</p>
-				<a href="../goods/list">SHOP NOW</a>
+				<a href="${ctx }/goods/list">SHOP NOW</a>
 			<div class="banner-text">			
-				<img src="../static/image/1.png" height="600px" alt=""/>	
+				<img src="${ctx }/static/image/1.png" height="600px" alt=""/>	
 			</div>
 		</div>
 	</div>			

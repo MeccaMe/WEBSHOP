@@ -25,20 +25,14 @@
 			<div class="cam"><img src="${ctx}/static/image/a.png" class="img-responsive" alt="" /></div>
 			<form>
 				<input type="text" value="uname"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'uname';}">
-				<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}" >
+				
 				<input type="password" value="upassword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'upassword';}">
 				<div class="submit"><input type="submit" onclick="myFunction()" value="Sign in" ></div>
 				<div class="clear"></div>
-				<div class="buttons">
-					<ul>
-						<li><a href="#" class="hvr-sweep-to-right">Sign in with Facebook</a></li>
-						<li><a href="#" class="hvr-sweep-to-left">Sign in with Twitter</a></li>
-						<div class="clear"></div>
-					</ul>
-				</div>
+				
 				<div class="new">
 					<p><a href="#">Forgot Password ?</a></p>
-					<p class="sign">New here ?<a href="../register.jsp"> Sign Up</a></p>
+					<p class="sign">New here ?<a href="${ctx }/front/register.jsp" > Sign Up</a></p>
 					<div class="clear"></div>
 				</div>
 			</form>

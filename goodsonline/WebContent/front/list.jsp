@@ -466,7 +466,7 @@ width:1200px;
 			<div class="col-md-9 product-model-sec">
 			<c:forEach var="goods" items="${list }" varStatus="i">
 				<div class="product-grid">
-					<a href="goods/single?goodsId=${i.index }">				
+					<a href="single?goodsId=${goods.gid }"/>				
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
 						<c:set var="url" value="${goods.img1}"/>

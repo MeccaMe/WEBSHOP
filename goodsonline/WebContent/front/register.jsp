@@ -23,7 +23,7 @@
 	<h1>Welcome To The Organic World</h1>
 		<div class="app-cam">
 			<div class="cam"><img src="../static/image/a.png" class="img-responsive" alt="" /></div>
-			<form>
+			<form action="register" method="post">
 				<input type="text" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" >
 				<input type="text" value="your name here" onfocus="this.value = '';" onblur="if (this.value == ''){this.value='your name here';}">
 				<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">

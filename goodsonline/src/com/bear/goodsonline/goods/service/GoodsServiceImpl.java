@@ -19,7 +19,20 @@ public class GoodsServiceImpl {
 	public List<Goods> listAll(){
 		return this.goodsDaoImpl.findAll();
 	}
-	public Goods listId(int gId){
-		return this.goodsDaoImpl.findId(gId);
+	public Goods findId(int id) {
+		return goodsDaoImpl.findId(id);
+	}
+	public void deleteOneGoods(Goods g) {
+		this.goodsDaoImpl.deleteGoods(g);
+	}	
+	public void updateOneGoods(Goods g) {
+		this.goodsDaoImpl.updateGoods(g);
+	}
+	public void addOneGoods(Goods g) {
+		this.goodsDaoImpl.saveGoods(g);
+	}
+
+	public int getPageCount() {
+		 return (int) Math.ceil((this.goodsDaoImpl.findCount()/6));		
 	}
 }
