@@ -21,6 +21,7 @@ public class Goods {
 	private String img2;
 	private String img3;
 	private GoodsType goodsType;
+//	private CartItem cartItem;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -75,5 +76,13 @@ public class Goods {
 	public void setGoodsType(GoodsType goodsType) {
 		this.goodsType = goodsType;
 	}
-	
+//	@ManyToOne
+//	@JoinColumn(name="iid")
+//	public CartItem getCartItem() {
+//		return cartItem;
+//	}
+//	public void setCartItem(CartItem cartItem) {
+//		this.cartItem = cartItem;
+//	}
+//	
 }

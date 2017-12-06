@@ -74,18 +74,18 @@ nav.navbar.navbar-default {
     display: block;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    background: #F07818;
+    background: #89a813c7;
     color: #fff;
 }
 .nav > li > a.active{
-     background: #F07818;
+     background: #89a813c7;
 }
 .row {
     margin: 0;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #FFF;
-    background-color: #F07818;
+    background-color: #89a813c7;
 }
 b.caret {
     margin-left: 10px;
@@ -110,7 +110,7 @@ b.caret {
 .row h4 {
     border-bottom: 1px solid #E6E3E3;
     font-size: 1.2em;
-    color: #F07818;
+    color: #89a813c7;
     line-height: 1.8em;
     text-transform: uppercase;
     margin-bottom: 7%;
@@ -122,7 +122,7 @@ b.caret {
 	font-size: 1em;
 }
 .multi-column-dropdown li a:hover {
-    color: #F07818;
+    color: #89a813c7;
 }
 @media (max-width: 767px) {
 	.dropdown-menu.multi-column {
@@ -173,7 +173,7 @@ b.caret {
     outline: none;
     color: #000;
     background: none;
-    border: 1px solid #F07818;
+    border: 1px solid #89a813c7;
     font-size: 1em;
     -webkit-appearance: none;
     width: 70%;
@@ -181,7 +181,7 @@ b.caret {
 }
 .search button.btn.btn-default {
     border: none;
-    background: #F07818;
+    background: #89a813c7;
     border-radius: inherit;
     float: right;
     width: 30%;
@@ -286,11 +286,11 @@ fieldset#body {
 }
 /* Sign In Button */
 #loginForm #login {
-    background: #F07818;
+    background: #89a813c7;
     color: #fff;
     font-size: 1em;
     padding: 5px 20px;
-    border: 1px solid #F07818;
+    border: 1px solid #89a813c7;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -299,7 +299,7 @@ fieldset#body {
 }
 #loginForm #login:hover {
 	background: #fff;
-	color: #F07818;
+	color: #89a813c7;
 }
 /* Forgot your password */
 #loginForm p {
@@ -309,7 +309,7 @@ fieldset#body {
 }
 .header-right #loginForm a.sign {
     display: inline-block !important;
-    color: #F07818;
+    color: #89a813c7;
     margin-right: 10px;
     border-right: 1px solid;
     padding-right: 10px;
@@ -323,7 +323,7 @@ fieldset#body {
 }
 #loginForm span a:hover{
 	text-decoration:underline;
-	color:#F07818;
+	color:#89a813c7;
 }
 input:focus {
     outline:none;
@@ -351,7 +351,7 @@ input:focus {
 	display:inline-block;
 }
 .cart-box h4 a:hover {
-    color: #F07818;
+    color: #89a813c7;
 }
 .cart-box p {
     font-size: 1.1em;
@@ -360,12 +360,12 @@ input:focus {
 .cart-box  p a{
 	color:#fff;
 	padding: 0.5em;
-	background-color: #F07818;
-	border:1px solid #F07818;
+	background-color: #89a813c7;
+	border:1px solid #89a813c7;
 }
 .cart-box p a:hover {
     background-color: rgb(255, 255, 255);
-    color: #F07818;
+    color: #89a813c7;
 }
 .header-right.cart:hover div.cart-box{
 	display:block;
@@ -393,11 +393,11 @@ input:focus {
 }
 .banner-text {
     position: absolute;
-    top: 29%;
-    right: 13%;
+    top: 40%;
+    right: 23%;
 }
 .banner h2.hdng span {
-    color: #F07818;
+    color: #89a813c7;
 }
 .banner h2.hdng {
     font-size: 6em;
@@ -411,7 +411,7 @@ input:focus {
     margin: 1em 0 3em;
     letter-spacing: 7px;
     font-weight: 700;
-    color: #F07818;
+    color: #89a813c7;
 }
 .banner a {
     font-size: 1.5em;
@@ -421,8 +421,8 @@ input:focus {
     border: 7px solid #5D4B33;
 }
 .banner a:hover {
-    border-color: #F07818;
-	color:#F07818;
+    border-color: #89a813c7;
+	color:#89a813c7;
 }
 /*--//banner--*/
 /*--gallery--*/
@@ -482,8 +482,8 @@ span.glyphicon.glyphicon-eye-open {
     float: right;
 }
 .gallery-info a.shop:hover{
-	border-color:#F07818;
-	color:#F07818;
+	border-color:#89a813c7;
+	color:#89a813c7;
 }
 .gallery-info.galrr-info-two p {
     font-size: 1em;
@@ -535,7 +535,7 @@ span.glyphicon.glyphicon-eye-open {
 	content: "\2605";
 	position: absolute;
 	left: 0;
-	color: #F07818;
+	color: #89a813c7;
 }
 .rating1 {
 	direction: rtl;
@@ -566,7 +566,7 @@ ul.size li {
   margin: 0 10px 0 0;
 }
 ul.size h3 {
-    color: #F07818;
+    color: #89a813c7;
     font-size: 1.4em;
     text-transform: uppercase;
     margin: 0 0 0.5em;
@@ -619,13 +619,13 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
 }
 .subscribe form input[type="submit"] {
     outline: none;
-    border: 1px solid #F07818;
+    border: 1px solid #89a813c7;
     width: 25%;
     padding: 0.92em;
     font-size: 1em;
     background: none;
     color: #fff;
-    background-color: #F07818;
+    background-color: #89a813c7;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -634,7 +634,7 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
 }
 .subscribe form input[type="submit"]:hover {
     background-color: rgba(255, 255, 255, 0.21);
-    color: #F07818;
+    color: #89a813c7;
 }
 /*--//subscribe--*/
 /*--footer--*/
@@ -679,7 +679,7 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
 .footer-grid h4 {
     font-size: 2em;
     text-transform: uppercase;
-    color: #F07818;
+    color: #89a813c7;
     margin-bottom: 1em;
     font-family: 'Marvel-Regular';
 }
@@ -688,7 +688,7 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
 	margin-bottom: 7px;
 }
 .footer-grid ul li a:hover {
-    color: #F07818;
+    color: #89a813c7;
 }
 .footer-grid ul li a {
     font-size: 1em;
@@ -713,7 +713,7 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
     line-height: 1.8em;
 }
 .footer-bottom p a {
-    color: #F07818;
+    color: #89a813c7;
     margin-left: 6px;
 }
 .footer-bottom p a:hover {
@@ -812,7 +812,7 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
 }
 .product-grid {
 	width: 300px;
-	height:500px;
+	height:400px;
 	margin: 0 3% 4% 0;
 	float: left;	
 	position: relative;
@@ -825,7 +825,7 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
 }
 .product-grid:hover {
 	z-index: 1;
-	border-color: #F07818;
+	border-color: #89a813c7;
 }
 .more-product-info span {
 	color:#fff;
@@ -870,8 +870,8 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
     -webkit-border-radius: 5px;
     -o-border-radius: 5px;
     margin: 1.5em 16px 0px 0px;
-    background: #F07818;
-    border: 1px solid #F07818;
+    background: #89a813c7;
+    border: 1px solid #89a813c7;
     outline: none;
 }
 .prt_name{
@@ -883,7 +883,7 @@ ul.rating li a:hover, .price_single a:hover, ul.size li a:hover {
 }
 .item_add:hover {
     background: none;
-    color: #F07818;
+    color: #89a813c7;
 }
 .product-info-price {
 	float: right;
@@ -917,7 +917,7 @@ p.pric1 {
 	display:inline-block;
 }
 p.disc {
-    color: #F07818;
+    color: #89a813c7;
     font-size: 0.85em;
 	display:inline-block;
 }
@@ -1004,7 +1004,7 @@ p.disc {
 }
 h2 {
     font-size: 4em;
-    color: #F07818;
+    color: #89a813c7;
     font-family: 'Marvel-Regular';
     text-align: center;
 }
@@ -1299,7 +1299,7 @@ color:#8ce78a;
 	border-bottom: 1px solid #E8E5E5;
 }
 .single-grid1 ul li a:hover {
-    color: #F07818;
+    color: #89a813c7;
 }
 .single-grid1 ul li a {
     font-size: 1em;
@@ -1345,8 +1345,8 @@ span.glyphicon.glyphicon-star-empty:hover {
     display: inline-block;
     font-size: 0.9em;
     padding: 0.5em 1em;
-    border: 2px solid #F07818;
-    background: #F07818;
+    border: 2px solid #89a813c7;
+    background: #89a813c7;
     color: #fff;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1412,7 +1412,7 @@ p span.overline{
 }
 .related-products h3 {
     font-size: 3.5em;
-    color: #F07818;
+    color: #89a813c7;
     font-family: 'Marvel-Regular';
 }
 .products-grid h4 {
@@ -1449,7 +1449,7 @@ p span.overline{
     margin: 0 auto;
 }
 .register-top-grid h3, .register-bottom-grid h3 {
-    color: #F07818;
+    color: #89a813c7;
     font-size: 3em;
     padding-bottom: 1em;
     margin: 0;
@@ -1546,7 +1546,7 @@ p span.overline{
 	margin-top:1em;
 }
 .register-but form input[type="submit"] {
-    border: 2px solid #F07818;
+    border: 2px solid #89a813c7;
     color: #FFF;
     font-size: 1.1em;
     padding: 0.5em 2em;
@@ -1556,11 +1556,11 @@ p span.overline{
     -o-transition: 0.5s all;
     display: inline-block;
     outline: none;
-    background-color: #F07818;
+    background-color: #89a813c7;
 }
 .register-but input[type="submit"]:hover {
     background: #FFF;
-    color: #F07818;
+    color: #89a813c7;
 }
 .register-bottom-grid {
 	margin-top:4em;
@@ -1600,7 +1600,7 @@ p span.overline{
     font-family: 'Marvel-Regular';
 }
 .cart-item-info h3 a {
-    color: #F07818;
+    color: #89a813c7;
 }
 .cart-item-info h3 span{
 	display:block;
@@ -1906,7 +1906,7 @@ i.sele{
 }
 .contact h4 {
     font-size: 2.1em;
-    color: #F07818;
+    color: #89a813c7;
     margin: 0 0 0.8em 0;
     font-family: 'Marvel-Regular';
 }
@@ -1944,7 +1944,7 @@ i.sele{
     letter-spacing: 1px;
 }
 .address a:hover {
-	color:#F07818;
+	color:#89a813c7;
 }
 .address-grids:nth-child(1) p {
     margin-left: 2em;
@@ -1992,9 +1992,9 @@ span.glyphicon.glyphicon-map-marker {
 	margin-bottom: 1em;
 }
 .contact-form .btn1 {
-    border: 2px solid #F07818;
+    border: 2px solid #89a813c7;
     color: #fff;
-    background: #F07818;
+    background: #89a813c7;
     cursor: pointer;
     padding: 7px 0;
     width: 11%;
@@ -2009,7 +2009,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 .contact-form button.btn1:hover {
     background-color: #fff;
-    color: #F07818;
+    color: #89a813c7;
 }
 /*--//contact--*/
 /*---- responsive-design -----*/
@@ -2263,9 +2263,10 @@ h1.navbar-brand {
     letter-spacing: 4px;
 }
 .banner-text {
-    top: 22%;
+    top: 1%;
     right: 11%;
-    width: 31%;
+    height:100px;
+    width: 27%;
 }
 .banner {
     min-height: 440px;
@@ -2574,14 +2575,14 @@ button.btn.btn-default {
 }
 @media(max-width:767px){
 button.navbar-toggle {
-    border-color: #F07818 !important;
-    background-color: #F07818;
+    border-color: #89a813c7 !important;
+    background-color: #89a813c7;
 }
 button.navbar-toggle{
     margin-right: 24em;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #F07818;
+    background-color: #89a813c7;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #F2F6F7;

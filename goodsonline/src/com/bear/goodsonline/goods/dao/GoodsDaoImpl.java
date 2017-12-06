@@ -21,7 +21,7 @@ public class GoodsDaoImpl {
 		Query q = this.sessionFactory.getCurrentSession().createQuery("from Goods");
 //		Query qu = this.sessionFactory.getCurrentSession().createQuery("select count(id) from Goods");
 		q.setFirstResult(0);
-		q.setMaxResults(12);
+		q.setMaxResults(6);
 		return q.list();
 	}
 	public Goods findId(int id) {
@@ -43,7 +43,5 @@ public class GoodsDaoImpl {
 	public void saveGoods(Goods g) {
 		this.sessionFactory.getCurrentSession().save(g);
 	}
-	
-	
 	
 }

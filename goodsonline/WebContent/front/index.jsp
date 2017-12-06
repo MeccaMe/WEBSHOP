@@ -35,7 +35,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1 class="navbar-brand"><a  href="index.jsp">Yummy</a></h1>
+					<h1 class="navbar-brand"><a  href="index.jsp">TUASHOP</a></h1>
 				</div>
 				<!--navbar-header-->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -48,45 +48,45 @@
 									<div class="col-sm-3">
 										<h4>By Relation</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Friend</a></li>
-											<li><a class="list" href="products.jsp">Lover</a></li>
-											<li><a class="list" href="products.jsp">Sister</a></li>
-											<li><a class="list" href="products.jsp">Brother</a></li>
-											<li><a class="list" href="products.jsp">Kids</a></li>
-											<li><a class="list" href="products.jsp">Parents</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
 										</ul>
 									</div>																		
 									<div class="col-sm-3">
 										<h4>By Flavour</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Chocolate</a></li>
-											<li><a class="list" href="products.jsp">Mixed Fruit</a></li>
-											<li><a class="list" href="products.jsp">Butterscotch</a></li>
-											<li><a class="list" href="products.jsp">Strawberry</a></li>
-											<li><a class="list" href="products.jsp">Vanilla</a></li>
-											<li><a class="list" href="products.jsp">Eggless Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<h4>By Theme</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Heart shaped</a></li>
-											<li><a class="list" href="products.jsp">Cartoon Cakes</a></li>
-											<li><a class="list" href="products.jsp">2-3 Tier Cakes</a></li>
-											<li><a class="list" href="products.jsp">Square shape</a></li>
-											<li><a class="list" href="products.jsp">Round shape</a></li>
-											<li><a class="list" href="products.jsp">Photo cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Heart shaped</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Cartoon Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">2-3 Tier Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Square shape</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Round shape</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Photo cakes</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<h4>Weight</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">1 kG</a></li>
-											<li><a class="list" href="products.jsp">1.5 kG</a></li>
-											<li><a class="list" href="products.jsp">2 kG</a></li>
-											<li><a class="list" href="products.jsp">3 kG</a></li>
-											<li><a class="list" href="products.jsp">4 kG</a></li>
-											<li><a class="list" href="products.jsp">Large</a></li>
+											<li><a class="list" href="${ctx }/goods/list">1 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">1.5 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">2 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">3 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">4 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Large</a></li>
 										</ul>
 									</div>
 								</div>
@@ -99,45 +99,45 @@
 									<div class="col-sm-3">
 										<h4>By Relation</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Friend</a></li>
-											<li><a class="list" href="products.jsp">Lover</a></li>
-											<li><a class="list" href="products.jsp">Sister</a></li>
-											<li><a class="list" href="products.jsp">Brother</a></li>
-											<li><a class="list" href="products.jsp">Kids</a></li>
-											<li><a class="list" href="products.jsp">Parents</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
 										</ul>
 									</div>																		
 									<div class="col-sm-3">
 										<h4>By Flavour</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Chocolate</a></li>
-											<li><a class="list" href="products.jsp">Mixed Fruit</a></li>
-											<li><a class="list" href="products.jsp">Butterscotch</a></li>
-											<li><a class="list" href="products.jsp">Strawberry</a></li>
-											<li><a class="list" href="products.jsp">Vanilla</a></li>
-											<li><a class="list" href="products.jsp">Eggless Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<h4>By Theme</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Heart shaped</a></li>
-											<li><a class="list" href="products.jsp">Cartoon Cakes</a></li>
-											<li><a class="list" href="products.jsp">2-3 Tier Cakes</a></li>
-											<li><a class="list" href="products.jsp">Square shape</a></li>
-											<li><a class="list" href="products.jsp">Round shape</a></li>
-											<li><a class="list" href="products.jsp">Photo cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Heart shaped</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Cartoon Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">2-3 Tier Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Square shape</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Round shape</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Photo cakes</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<h4>Weight</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">1 kG</a></li>
-											<li><a class="list" href="products.jsp">1.5 kG</a></li>
-											<li><a class="list" href="products.jsp">2 kG</a></li>
-											<li><a class="list" href="products.jsp">3 kG</a></li>
-											<li><a class="list" href="products.jsp">4 kG</a></li>
-											<li><a class="list" href="products.jsp">Large</a></li>
+											<li><a class="list" href="${ctx }/goods/list">1 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">1.5 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">2 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">3 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">4 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Large</a></li>
 										</ul>
 									</div>
 								</div>
@@ -150,45 +150,45 @@
 									<div class="col-sm-3">
 										<h4>By Relation</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Friend</a></li>
-											<li><a class="list" href="products.jsp">Lover</a></li>
-											<li><a class="list" href="products.jsp">Sister</a></li>
-											<li><a class="list" href="products.jsp">Brother</a></li>
-											<li><a class="list" href="products.jsp">Kids</a></li>
-											<li><a class="list" href="products.jsp">Parents</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
 										</ul>
 									</div>																		
 									<div class="col-sm-3">
 										<h4>By Flavour</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Chocolate</a></li>
-											<li><a class="list" href="products.jsp">Mixed Fruit</a></li>
-											<li><a class="list" href="products.jsp">Butterscotch</a></li>
-											<li><a class="list" href="products.jsp">Strawberry</a></li>
-											<li><a class="list" href="products.jsp">Vanilla</a></li>
-											<li><a class="list" href="products.jsp">Eggless Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<h4>By Theme</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Heart shaped</a></li>
-											<li><a class="list" href="products.jsp">Cartoon Cakes</a></li>
-											<li><a class="list" href="products.jsp">2-3 Tier Cakes</a></li>
-											<li><a class="list" href="products.jsp">Square shape</a></li>
-											<li><a class="list" href="products.jsp">Round shape</a></li>
-											<li><a class="list" href="products.jsp">Photo cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Heart shaped</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Cartoon Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">2-3 Tier Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Square shape</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Round shape</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Photo cakes</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<h4>Weight</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">1 kG</a></li>
-											<li><a class="list" href="products.jsp">1.5 kG</a></li>
-											<li><a class="list" href="products.jsp">2 kG</a></li>
-											<li><a class="list" href="products.jsp">3 kG</a></li>
-											<li><a class="list" href="products.jsp">4 kG</a></li>
-											<li><a class="list" href="products.jsp">Large</a></li>
+											<li><a class="list" href="${ctx }/goods/list">1 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">1.5 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">2 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">3 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">4 kG</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Large</a></li>
 										</ul>
 									</div>
 								</div>
@@ -201,34 +201,34 @@
 									<div class="col-sm-4">
 										<h4>By Relation</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Friend</a></li>
-											<li><a class="list" href="products.jsp">Lover</a></li>
-											<li><a class="list" href="products.jsp">Sister</a></li>
-											<li><a class="list" href="products.jsp">Brother</a></li>
-											<li><a class="list" href="products.jsp">Kids</a></li>
-											<li><a class="list" href="products.jsp">Parents</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
 										</ul>
 									</div>																		
 									<div class="col-sm-4">
 										<h4>By Flavour</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Chocolate</a></li>
-											<li><a class="list" href="products.jsp">Mixed Fruit</a></li>
-											<li><a class="list" href="products.jsp">Butterscotch</a></li>
-											<li><a class="list" href="products.jsp">Strawberry</a></li>
-											<li><a class="list" href="products.jsp">Vanilla</a></li>
-											<li><a class="list" href="products.jsp">Eggless Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
 										</ul>
 									</div>								
 									<div class="col-sm-4">
 										<h4>Specials</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="products.jsp">Ice cream cake</a></li>
-											<li><a class="list" href="products.jsp">Swiss roll</a></li>
-											<li><a class="list" href="products.jsp">Ruske kape</a></li>
-											<li><a class="list" href="products.jsp">Cupcakes</a></li>
-											<li><a class="list" href="products.jsp">Muffin</a></li>
-											<li><a class="list" href="products.jsp">Merveilleux</a></li>										
+											<li><a class="list" href="${ctx }/goods/list">Ice cream cake</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Swiss roll</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Ruske kape</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Cupcakes</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Muffin</a></li>
+											<li><a class="list" href="${ctx }/goods/list">Merveilleux</a></li>										
 										</ul>
 									</div>
 								</div>
@@ -252,9 +252,9 @@
 					</div>	
 				</div>
 				<div class="header-right login">
-					<a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+					<a href="loginregister.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 					<div id="loginBox">                
-						<form id="loginForm">
+						<!-- <form id="loginForm">
 							<fieldset id="body">
 								<fieldset>
 									<label for="email">Email Address</label>
@@ -268,18 +268,18 @@
 								<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
 							</fieldset>
 							<p>New User ? <a class="sign" href="account.jsp">Sign Up</a> <span><a href="#">Forgot your password?</a></span></p>
-						</form>
+						</form> -->
 					</div>
 				</div>
 				<div class="header-right cart">
 					<a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-					<div class="cart-box">
+					<!-- <div class="cart-box">
 						<h4><a href="checkout.jsp">
 							<span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>) 
 						</a></h4>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
 						<div class="clearfix"> </div>
-					</div>
+					</div> -->
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -290,11 +290,11 @@
 	<!--banner-->
 	<div class="banner">
 		<div class="container">
-			<h2 class="hdng"> Organic<span><br>Drinks&Dessert</span><br> for u</h2>
+			<h2 class="hdng"> Organic<br><span>Drinks&Dessert</span></br> for u</h2>
 			<p>Try our best to make your day special</p>
 				<a href="${ctx }/goods/list">SHOP NOW</a>
 			<div class="banner-text">			
-				<img src="${ctx }/static/image/1.png" height="600px" alt=""/>	
+				<img src="${ctx }/static/image/1.png" height="500px" alt=""/>	
 			</div>
 		</div>
 	</div>			
@@ -304,7 +304,32 @@
 		<div class="container">
 			<div class="gallery-grids">
 				<div class="col-md-8 gallery-grid glry-one">
-					<a href="products.jsp"><img src="../static/image/g1.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="../static/image/berrycake.jpg" class="img-responsive" alt=""/>
+						<div class="gallery-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="single?goodsId=${goods.gid }">SHOP NOW</a>
+							<div class="clearfix"> </div>
+						</div>
+					</a>
+					<div class="galy-info">
+						<p>Berrycake with fresh,yummy raspberry. </p>
+						<div class="galry">
+							<div class="prices">
+								<h5 class="item_price">$90</h5>
+							</div>
+							<div class="rating">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>						
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 gallery-grid ">
+					<a href="${ctx }/goods/list"><img src="../static/image/timg.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -312,24 +337,75 @@
 						</div>
 					</a>
 					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
+						<p>Summer icy lemon juice.</p>
 						<div class="galry">
 							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
+								<h5 class="item_price">$30.00</h5>
 							</div>
 							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
 							</div>						
 							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 gallery-grid glry-two">
-					<a href="products.jsp"><img src="../static/image/g2.jpg" class="img-responsive" alt=""/>
+				<div class="col-md-3 gallery-grid ">
+					<a href="${ctx }/goods/list"><img src="../static/image/strawberryms2.jpeg" class="img-responsive" alt=""/>
+						<div class="gallery-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="single.jsp">SHOP NOW</a>
+							<div class="clearfix"> </div>
+						</div>
+					</a>
+					<div class="galy-info">
+						<p>Icy strawberry milk shake.</p>
+						<div class="galry">
+							<div class="prices">
+								<h5 class="item_price">$40.00</h5>
+							</div>
+							<div class="rating">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>						
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 gallery-grid ">
+					<a href="${ctx }/goods/list"><img src="../static/image/flowerms.jpg" class="img-responsive" alt=""/>
+						<div class="gallery-info">
+							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
+							<a class="shop" href="single.jsp">SHOP NOW</a>
+							<div class="clearfix"> </div>
+						</div>
+					</a>
+					<div class="galy-info">
+						<p>Smiling and delicious flower milk shake.</p>
+						<div class="galry">
+							<div class="prices">
+								<h5 class="item_price">$60.00</h5>
+							</div>
+							<div class="rating">
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+							</div>						
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				
+					<div class="col-md-4 gallery-grid glry-two">
+					<a href="${ctx }/goods/list"><img src="../static/image/kiwi.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info galrr-info-two">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -337,24 +413,24 @@
 						</div>
 					</a>
 					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
+						<p>Fresh kiwi milk shake</p>
 						<div class="galry">
 							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
+								<h5 class="item_price">$60</h5>
 							</div>
 							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
 							</div>						
 							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g3.png" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="../static/image/ic4.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -362,24 +438,25 @@
 						</div>
 					</a>
 					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
+						<p>Smiling ice cream.</p>
 						<div class="galry">
 							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
+								<h5 class="item_price">$40.00</h5>
 							</div>
 							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
 							</div>						
 							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
+				
 				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g4.png" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="../static/image/donut3.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -387,24 +464,24 @@
 						</div>
 					</a>
 					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
+						<p>Pretty animal donuts.</p>
 						<div class="galry">
 							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
+								<h5 class="item_price">$40.00</h5>
 							</div>
 							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
 							</div>						
 							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g5.png" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="../static/image/penzaimt.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -412,24 +489,24 @@
 						</div>
 					</a>
 					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
+						<p>Special milk tea with fun.</p>
 						<div class="galry">
 							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
+								<h5 class="item_price">$70.00</h5>
 							</div>
 							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
 							</div>						
 							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g6.png" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="../static/image/mangocake.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -437,24 +514,24 @@
 						</div>
 					</a>
 					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
+						<p>Sweety mango cake.</p>
 						<div class="galry">
 							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
+								<h5 class="item_price">$50.00</h5>
 							</div>
 							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
 							</div>						
 							<div class="clearfix"></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g7.png" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="../static/image/naicha2.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -462,92 +539,17 @@
 						</div>
 					</a>
 					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
+						<p>Milk tea in classical.</p>
 						<div class="galry">
 							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
+								<h5 class="item_price">$45.00</h5>
 							</div>
 							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-							</div>						
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g8.png" class="img-responsive" alt=""/>
-						<div class="gallery-info">
-							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
-							<a class="shop" href="single.jsp">SHOP NOW</a>
-							<div class="clearfix"> </div>
-						</div>
-					</a>
-					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
-						<div class="galry">
-							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
-							</div>
-							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-							</div>						
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g9.png" class="img-responsive" alt=""/>
-						<div class="gallery-info">
-							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
-							<a class="shop" href="single.jsp">SHOP NOW</a>
-							<div class="clearfix"> </div>
-						</div>
-					</a>
-					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
-						<div class="galry">
-							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
-							</div>
-							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-							</div>						
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 gallery-grid ">
-					<a href="products.jsp"><img src="../static/image/g10.png" class="img-responsive" alt=""/>
-						<div class="gallery-info">
-							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
-							<a class="shop" href="single.jsp">SHOP NOW</a>
-							<div class="clearfix"> </div>
-						</div>
-					</a>
-					<div class="galy-info">
-						<p>Lorem Ipsum is simply</p>
-						<div class="galry">
-							<div class="prices">
-								<h5 class="item_price">$95.00</h5>
-							</div>
-							<div class="rating">
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
-								<span>鈽?/span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
+								<span>☆</span>
 							</div>						
 							<div class="clearfix"></div>
 						</div>
@@ -575,7 +577,7 @@
 				<div class="col-md-2 footer-grid">
 					<h4>company</h4>
 					<ul>
-						<li><a href="products.jsp">products</a></li>
+						<li><a href="${ctx }/goods/list">products</a></li>
 						<li><a href="#">Work Here</a></li>
 						<li><a href="#">Team</a></li>
 						<li><a href="#">Happenings</a></li>
