@@ -252,7 +252,7 @@
 					</div>	
 				</div>
 				<div class="header-right login">
-					<a href="loginregister.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+					<a href="front/loginregister.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 					<div id="loginBox">                
 						<!-- <form id="loginForm">
 							<fieldset id="body">
@@ -272,14 +272,14 @@
 					</div>
 				</div>
 				<div class="header-right cart">
-					<a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-					<!-- <div class="cart-box">
-						<h4><a href="checkout.jsp">
+					<a href="front/cart.jsp"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+					<div class="cart-box">
+						<h4><a href="cart.jsp">
 							<span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>) 
 						</a></h4>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
 						<div class="clearfix"> </div>
-					</div> -->
+					</div> 
 				</div>
 				<div class="clearfix"> </div>
 			</div>

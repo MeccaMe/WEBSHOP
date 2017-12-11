@@ -1,11 +1,14 @@
 package com.bear.goodsonline.users.controller;
 
-import javax.annotation.Resource;
+import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bear.goodsonline.entity.Users;
 import com.bear.goodsonline.users.service.UserService;
@@ -13,27 +16,51 @@ import com.bear.goodsonline.users.service.UserService;
 @Controller
 @RequestMapping("users")
 public class UserController {
-//	@Resource
-	@Autowired
+	@Resource
+	
 	private UserService userService;
+//	@RequestMapping("/userlogin")
+//	public String login (@RequestParam("uname") String name,@RequestParam("upassword") String password,HttpSession session,Model model) {
+//		Users user = this.userService.login(name, password);
+//		if(user!=null) {
+//			session.setAttribute("user", user);
+//			return "index";
+//		}else {
+//			model.addAttribute("errorinfo","不正确");
+//			return "loginregister";
+//		}
+//	}
+//	@RequestMapping("/loginregister")
+//	public String register (@RequestParam("uname") String name,@RequestParam("upassword") String password,HttpSession session,Model model) {
+//		Users user = this.userService.login(name, password);
+//		if(user!=null) {
+//			session.setAttribute("user", user);
+//			return "index";
+//		}else {
+//			model.addAttribute("errorinfo","不正确");
+//			return "loginregister";
+//		}
+//	}
 	@RequestMapping("/userlogin")
-	public String login(String username,String password) {
-		Users user = userService.login(username, password);
+	public String login(String uname,String upassword) {
+		Users user = userService.login(uname, upassword);
 		if(user != null) {
-			return "index.jsp";
+			return "front/index";
 		}else {
 			return "loginregister";
 		}
 	}
-	@RequestMapping("/register")
-	private String register(Users user,Model model) {
-		boolean result = userService.addNewUser(user);
-		if(result) {
-			return "loginregister";
-		}else {
-			return "loginregister";
-		}
-	}
+//	@RequestMapping("/loginregister")
+//	private String register(Users user,Model model) {
+//		System.out.println("000");
+//		boolean result = userService.addNewUser(user);
+//		System.out.println("111");
+//		if(result) {
+//			return "loginregister";
+//		}else {
+//			return "loginregister";
+//		}
+//	}
 	
 	
 	

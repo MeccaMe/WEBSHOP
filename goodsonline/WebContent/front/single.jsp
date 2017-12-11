@@ -288,7 +288,7 @@
 				<div class="header-right cart">
 					<a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
 					<div class="cart-box">
-						<h4><a href="checkout.html">
+						<h4><a href="cart.jsp">
 							<span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>) 
 						</a></h4>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
@@ -429,169 +429,11 @@ sweets always make people love and hate them
 		</div>
 	</div>
 	<!--//collapse -->
-	<!--related-products-->
-	<div class="related-products">
-		<div class="container">
-			<h3>Related Products</h3>
-			<div class="product-model-sec single-product-grids">
-				<div class="product-grid single-product">
-					<a href="single.html">
-					<div class="more-product"><span> </span></div>						
-					<div class="product-img b-link-stripe b-animate-go  thickbox">
-						<img src="${ctx}/static/image/m1.png" class="img-responsive" alt="">
-						<div class="b-wrapper">
-						<h4 class="b-animate b-from-left  b-delay03">							
-						<button>View</button>
-						</h4>
-						</div>
-					</div>
-					</a>					
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust prt_name">
-							<h4>Product #1</h4>								
-							<span class="item_price">$2000</span>
-							<div class="ofr">
-							  <p class="pric1"><del>$2300</del></p>
-							  <p class="disc">[15% Off]</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>												
-					</div>
-				</div>
-				<div class="product-grid single-product">
-					<a href="single.html">
-					<div class="more-product"><span> </span></div>						
-					<div class="product-img b-link-stripe b-animate-go  thickbox">
-						<img src="${ctx}/static/image/m2.png" class="img-responsive" alt="">
-						<div class="b-wrapper">
-						<h4 class="b-animate b-from-left  b-delay03">							
-						<button>View</button>
-						</h4>
-						</div>
-					</div>
-					</a>					
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust prt_name">
-							<h4>Product #1</h4>								
-							<span class="item_price">$2000</span>
-							<div class="ofr">
-							  <p class="pric1"><del>$2300</del></p>
-							  <p class="disc">[15% Off]</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>												
-					</div>
-				</div>
-				<div class="product-grid single-product">
-					<a href="single.html">
-					<div class="more-product"><span> </span></div>						
-					<div class="product-img b-link-stripe b-animate-go  thickbox">
-						<img src="${ctx}/static/image/m3.png" class="img-responsive" alt="">
-						<div class="b-wrapper">
-						<h4 class="b-animate b-from-left  b-delay03">							
-						<button>View</button>
-						</h4>
-						</div>
-					</div>
-					</a>					
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust prt_name">
-							<h4>Product #1</h4>								
-							<span class="item_price">$2000</span>
-							<div class="ofr">
-							  <p class="pric1"><del>$2300</del></p>
-							  <p class="disc">[15% Off]</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>												
-					</div>
-				</div>
-				<div class="product-grid single-product">
-					<a href="single.html">
-					<div class="more-product"><span> </span></div>						
-					<div class="product-img b-link-stripe b-animate-go  thickbox">
-						<img src="${ctx}/static/image/m4.png" class="img-responsive" alt="">
-						<div class="b-wrapper">
-						<h4 class="b-animate b-from-left  b-delay03">							
-						<button>view</button>
-						</h4>
-						</div>
-					</div>
-					</a>					
-					<div class="product-info simpleCart_shelfItem">
-						<div class="product-info-cust prt_name">
-							<h4>Product #1</h4>								
-							<span class="item_price">$2000</span>
-							<div class="ofr">
-							  <p class="pric1"><del>$2300</del></p>
-							  <p class="disc">[15% Off]</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>												
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!--related-products-->
-	<!--footer-->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-2 footer-grid">
-					<h4>company</h4>
-					<ul>
-						<li><a href="products.html">products</a></li>
-						<li><a href="#">Work Here</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Happenings</a></li>
-						<li><a href="#">Dealer Locator</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2 footer-grid">
-					<h4>service</h4>
-					<ul>
-						<li><a href="#">Support</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Warranty</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid">
-					<h4>order & returns</h4>
-					<ul>
-						<li><a href="#">Order Status</a></li>
-						<li><a href="#">Shipping Policy</a></li>
-						<li><a href="#">Return Policy</a></li>
-						<li><a href="#">Digital Gift Card</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2 footer-grid">
-					<h4>legal</h4>
-					<ul>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Terms and Conditions</a></li>
-						<li><a href="#">Social Responsibility</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid icons">
-					<h4>Connect with Us</h4>
-					<ul>
-						<li><a href="#"><img src="${ctx}/static/image/i1.png" alt=""/>Follow us on Facebook</a></li>
-						<li><a href="#"><img src="${ctx}/static/image/i2.png" alt=""/>Follow us on Twitter</a></li>
-						<li><a href="#"><img src="${ctx}/static/image/i3.png" alt=""/>Follow us on Google-plus</a></li>
-						<li><a href="#"><img src="${ctx}/static/image/i4.png" alt=""/>Follow us on Pinterest</a></li>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
+	
 	<!--footer-->
 	<div class="footer-bottom">
 		<div class="container">
-			<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			<p>Copyright &copy; 2015.Company name All rights reserved.</p>
 		</div>
 	</div>
 </html>

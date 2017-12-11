@@ -15,6 +15,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="users")
 public class Users {
+	
 	private int uid;
 	private String uname;
 	private String upassword;
@@ -55,6 +56,7 @@ public class Users {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
 	
 //	public Cart getCart() {
 //		return cart;

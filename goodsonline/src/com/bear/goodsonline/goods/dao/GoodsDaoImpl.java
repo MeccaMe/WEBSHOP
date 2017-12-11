@@ -19,7 +19,6 @@ public class GoodsDaoImpl {
 	
 	public List<Goods> findAll(){
 		Query q = this.sessionFactory.getCurrentSession().createQuery("from Goods");
-//		Query qu = this.sessionFactory.getCurrentSession().createQuery("select count(id) from Goods");
 		q.setFirstResult(0);
 		q.setMaxResults(6);
 		return q.list();
@@ -33,6 +32,7 @@ public class GoodsDaoImpl {
 	public int findCount() {
 		Query fc=this.sessionFactory.getCurrentSession().createQuery("select count(id) from Goods");	
 		return Integer.parseInt(fc.toString());
+		 
 	}
 	public void deleteGoods(Goods g) {
 		this.sessionFactory.getCurrentSession().delete(g);
@@ -43,5 +43,28 @@ public class GoodsDaoImpl {
 	public void saveGoods(Goods g) {
 		this.sessionFactory.getCurrentSession().save(g);
 	}
-	
+	//?????以下
+	/**
+     * 分页查询
+     * @param hql 查询的条件
+     * @param offset 开始记录
+     * @param length 一次查询几条记录
+     * @return 返回查询记录集合
+     */
+   @SuppressWarnings("unchecked")
+   public List<Goods> queryForPage(int offset, int length) {
+       // TODO Auto-generated method stub
+       List<Goods> entitylist=null;
+       try{
+           Query query = this.sessionFactory.getCurrentSession().createQuery("from Course");
+           query.setFirstResult(offset);
+           query.setMaxResults(length);
+           entitylist = query.list();
+           
+       }catch(RuntimeException re){
+           throw re;
+       }
+       
+       return entitylist;
+   }
 }

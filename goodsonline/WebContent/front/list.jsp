@@ -273,9 +273,9 @@ width:1200px;
 					</div>
 				</div>
 				<div class="header-right login">
-					<a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+					<a href="front/loginregister.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 					<div id="loginBox">                
-						<form id="loginForm">
+						<!-- form id="loginForm">
 							<fieldset id="body">
 								<fieldset>
 									<label for="email">Email Address</label>
@@ -289,13 +289,13 @@ width:1200px;
 								<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
 							</fieldset>
 							<p>New User ? <a class="sign" href="account.jsp">Sign Up</a> <span><a href="#">Forgot your password?</a></span></p>
-						</form>
+						</form-->
 					</div>
 				</div>
 				<div class="header-right cart">
-					<a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+					<a href="front/cart.jsp"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
 					<div class="cart-box">
-						<h4><a href="checkout.jsp">
+						<h4><a href="cart.jsp">
 							<span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>) 
 						</a></h4>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
@@ -487,7 +487,7 @@ width:1200px;
 								<p class="disc">[15% Off]</p>
 							</div>
 							<input type="text" class="item_quantity" value="1" />
-							<input type="button" class="item_add items" value="Add">
+							<input type="button" class="item_add items" value="Add"></input>
 							<div class="clearfix"> </div>
 						</div>												
 					</div>
@@ -526,11 +526,11 @@ width:1200px;
 	<!-- 分页     -->
 			<table  class="foot">
 				<tr>
-		            <td colspan="6" align="center" >共${Count}条记录 共${pageCount}页 当前第${page.pageNum}页<br>              
-		            <a href="goods/list?pageNum=${pageNum }"><input type="button" name="fristPage" value="首页" /></a>
+		            <td colspan="6" align="center" >共${page.totalRecords}条记录 共${pageCount}页 当前第${pageNum}页<br>              
+		            <a href="list?pageNum=1"><input type="button" name="fristPage" value="首页" /></a>
 		            <c:choose>
 		               <c:when test="${pageNum!=1}">
-		               		<a href="goods/list?pageNum=${pageNum}"><input type="button" name="previousPage" value="上一页" /></a>
+		               		<a href="list?pageNum=${pageNum}"><input type="button" name="previousPage" value="上一页" /></a>
 		               </c:when>
 		               <c:otherwise>
 		               <input type="button" disabled="disabled" name="previousPage" value="上一页" />
@@ -538,19 +538,18 @@ width:1200px;
 		            </c:choose>
                 	<c:choose>
                  		 <c:when test="${pageNum != pageCount}">
-                   		 	<a href="goods/list?pageNum=${pageNum+1}"><input type="button" name="nextPage" value="下一页" /></a>
+                   		 	<a href="list?pageNum=${pageNum+1}"><input type="button" name="nextPage" value="下一页" /></a>
                   		 </c:when>
                   	<c:otherwise>                   
                       <input type="button" disabled="disabled" name="nextPage" value="下一页" />
                      </c:otherwise>
                 	</c:choose>
-		                <a href="goods/list?pageNum=${pageNum}"><input type="button" name="lastPage" value="尾页" /></a>
+		                <a href="list?pageNum=pageCount"><input type="button" name="lastPage" value="尾页" /></a>
 		            </td>
 		        </tr>
 			</table>
 	
 	<!--footer-->
-
 	</div>
 	<!--//footer-->
 	<div class="footer-bottom">
