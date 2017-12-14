@@ -16,11 +16,11 @@
 <link href="${ctx}/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="${ctx}/static/css/style.css" type="text/css" rel="stylesheet" media="all">
 <!-- js -->
-<script src="../static/js/jquery.min.js"></script>
-<script type="text/javascript" src="../static/js/bootstrap-3.1.1.min.js"></script>
+<script src="${ctx}/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="${ctx}/static/js/bootstrap-3.1.1.min.js"></script>
 <!-- //js -->	
 <!-- cart -->
-<script src="../static/js/simpleCart.min.js"> </script>
+<script src="${ctx}/static/js/simpleCart.min.js"> </script>
 <!-- cart -->
 </head>
 <body>
@@ -35,205 +35,93 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1 class="navbar-brand"><a  href="index.jsp">TUASHOP</a></h1>
+					<h1 class="navbar-brand"><a  href="${ctx }/front/index.jsp">TUASHOP</a></h1>
 				</div>
 				<!--navbar-header-->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="index.jsp" class="active">Home</a></li>
+						<li><a href="${ctx }/front/index.jsp" class="active">Home</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Birthday<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cold Drink<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-4">
 								<div class="row">
 									<div class="col-sm-3">
-										<h4>By Relation</h4>
+										<h4>juice</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
+											<li><a class="list" href="${ctx }/goods/type?typeid=1">juice</a></li>
+											
 										</ul>
 									</div>																		
 									<div class="col-sm-3">
-										<h4>By Flavour</h4>
+										<h4>milk tea</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/type?typeid=3">milk tea</a></li>
+											
 										</ul>
-									</div>
+									</div>	
 									<div class="col-sm-3">
-										<h4>By Theme</h4>
+										<h4>milk shake</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Heart shaped</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Cartoon Cakes</a></li>
-											<li><a class="list" href="${ctx }/goods/list">2-3 Tier Cakes</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Square shape</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Round shape</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Photo cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/type?typeid=7">milk shake</a></li>
+											
 										</ul>
-									</div>
-									<div class="col-sm-3">
-										<h4>Weight</h4>
-										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">1 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">1.5 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">2 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">3 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">4 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Large</a></li>
-										</ul>
-									</div>
+									</div>			
 								</div>
 							</ul>
 						</li>
 					   <li class="dropdown grid">
-							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Wedding<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Hot Drink<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-4">
 								<div class="row">
 									<div class="col-sm-3">
-										<h4>By Relation</h4>
+										<h4>milk tea</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
+											<li><a class="list" href="${ctx }/goods/type?typeid=3">milk tea</a></li>
+											
 										</ul>
 									</div>																		
 									<div class="col-sm-3">
-										<h4>By Flavour</h4>
+										<h4>tea</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/type?typeid=2">tea</a></li>
+											
 										</ul>
-									</div>
+									</div>	
 									<div class="col-sm-3">
-										<h4>By Theme</h4>
+										<h4>coffee</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Heart shaped</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Cartoon Cakes</a></li>
-											<li><a class="list" href="${ctx }/goods/list">2-3 Tier Cakes</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Square shape</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Round shape</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Photo cakes</a></li>
+											<li><a class="list" href="${ctx }/goods/type?typeid=4">coffee</a></li>
+											
 										</ul>
-									</div>
-									<div class="col-sm-3">
-										<h4>Weight</h4>
-										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">1 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">1.5 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">2 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">3 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">4 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Large</a></li>
-										</ul>
-									</div>
+									</div>			
 								</div>
 							</ul>
 						</li>				
 						<li class="dropdown grid">
-							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Special Offers <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Desserts <b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-4">
 								<div class="row">
 									<div class="col-sm-3">
-										<h4>By Relation</h4>
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
+											<li><a class="list" href="${ctx }/goods/type?typeid=6">Desserts</a></li>
 										</ul>
 									</div>																		
-									<div class="col-sm-3">
-										<h4>By Flavour</h4>
-										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-3">
-										<h4>By Theme</h4>
-										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Heart shaped</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Cartoon Cakes</a></li>
-											<li><a class="list" href="${ctx }/goods/list">2-3 Tier Cakes</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Square shape</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Round shape</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Photo cakes</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-3">
-										<h4>Weight</h4>
-										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">1 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">1.5 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">2 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">3 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">4 kG</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Large</a></li>
-										</ul>
-									</div>
 								</div>
 							</ul>
 						</li>
 						<li class="dropdown grid">
-							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Store<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle list1" data-toggle="dropdown">Ice cream<b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<div class="col-sm-4">
-										<h4>By Relation</h4>
+								<div class="row">	
+								<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Friend</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Lover</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Sister</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Brother</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Kids</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Parents</a></li>
+											<li><a class="list" href="${ctx}/goods/type?typeid=5">Ice cream</a></li>
 										</ul>
-									</div>																		
-									<div class="col-sm-4">
-										<h4>By Flavour</h4>
-										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Chocolate</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Mixed Fruit</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Butterscotch</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Strawberry</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Vanilla</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Eggless Cakes</a></li>
-										</ul>
-									</div>								
-									<div class="col-sm-4">
-										<h4>Specials</h4>
-										<ul class="multi-column-dropdown">
-											<li><a class="list" href="${ctx }/goods/list">Ice cream cake</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Swiss roll</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Ruske kape</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Cupcakes</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Muffin</a></li>
-											<li><a class="list" href="${ctx }/goods/list">Merveilleux</a></li>										
-										</ul>
-									</div>
+									</div>																	
 								</div>
 							</ul>
-						</li>								
+						</li>
+														
 					</ul> 
 					<!--/.navbar-collapse-->
 				</div>
@@ -252,40 +140,30 @@
 					</div>	
 				</div>
 				<div class="header-right login">
-					<a href="front/loginregister.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+					<a href="${ctx }/front/loginregister.jsp"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 					<div id="loginBox">                
-						<!-- <form id="loginForm">
-							<fieldset id="body">
-								<fieldset>
-									<label for="email">Email Address</label>
-									<input type="text" name="email" id="email">
-								</fieldset>
-								<fieldset>
-									<label for="password">Password</label>
-									<input type="password" name="password" id="password">
-								</fieldset>
-								<input type="submit" id="login" value="Sign in">
-								<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
-							</fieldset>
-							<p>New User ? <a class="sign" href="account.jsp">Sign Up</a> <span><a href="#">Forgot your password?</a></span></p>
-						</form> -->
 					</div>
 				</div>
+				
 				<div class="header-right cart">
 					<a href="front/cart.jsp"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
 					<div class="cart-box">
-						<h4><a href="cart.jsp">
+						<h4><a href="${ctx }/front/cart.jsp">
 							<span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>) 
 						</a></h4>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
 						<div class="clearfix"> </div>
 					</div> 
+					<div class="header-right login" style="color:yellow">
+						<p>${u.uname }</p>
+					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 			<div class="clearfix"> </div>
-		</div>
+		</div>	
 	</div>
+	
 	<!--//header-->
 	<!--banner-->
 	<div class="banner">
@@ -304,10 +182,10 @@
 		<div class="container">
 			<div class="gallery-grids">
 				<div class="col-md-8 gallery-grid glry-one">
-					<a href="${ctx }/goods/list"><img src="../static/image/berrycake.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/berrycake.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
-							<a class="shop" href="single?goodsId=${goods.gid }">SHOP NOW</a>
+							<a class="shop" href="single?goodsId=${goods.goodsId }">SHOP NOW</a>
 							<div class="clearfix"> </div>
 						</div>
 					</a>
@@ -329,7 +207,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/timg.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/timg.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -354,7 +232,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/strawberryms2.jpeg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/strawberryms2.jpeg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -379,7 +257,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/flowerms.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/flowerms.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -405,7 +283,7 @@
 				</div>
 				
 					<div class="col-md-4 gallery-grid glry-two">
-					<a href="${ctx }/goods/list"><img src="../static/image/kiwi.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx }/static/image/kiwi.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info galrr-info-two">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -430,7 +308,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/ic4.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/ic4.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -456,7 +334,7 @@
 				</div>
 				
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/donut3.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/donut3.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -481,7 +359,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/penzaimt.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/penzaimt.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -506,7 +384,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/mangocake.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/mangocake.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -531,7 +409,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 gallery-grid ">
-					<a href="${ctx }/goods/list"><img src="../static/image/naicha2.jpg" class="img-responsive" alt=""/>
+					<a href="${ctx }/goods/list"><img src="${ctx}/static/image/naicha2.jpg" class="img-responsive" alt=""/>
 						<div class="gallery-info">
 							<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> view</p>
 							<a class="shop" href="single.jsp">SHOP NOW</a>
@@ -574,54 +452,11 @@
 	<div class="footer">
 		<div class="container">
 			<div class="footer-grids">
-				<div class="col-md-2 footer-grid">
-					<h4>company</h4>
-					<ul>
-						<li><a href="${ctx }/goods/list">products</a></li>
-						<li><a href="#">Work Here</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Happenings</a></li>
-						<li><a href="#">Dealer Locator</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2 footer-grid">
-					<h4>service</h4>
-					<ul>
-						<li><a href="#">Support</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Warranty</a></li>
-						<li><a href="contact.jsp">Contact Us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid">
-					<h4>order & returns</h4>
-					<ul>
-						<li><a href="#">Order Status</a></li>
-						<li><a href="#">Shipping Policy</a></li>
-						<li><a href="#">Return Policy</a></li>
-						<li><a href="#">Digital Gift Card</a></li>
-					</ul>
-				</div>
-				<div class="col-md-2 footer-grid">
-					<h4>legal</h4>
-					<ul>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Terms and Conditions</a></li>
-						<li><a href="#">Social Responsibility</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 footer-grid icons">
-					<h4>Connect with Us</h4>
-					<ul>
-						<li><a href="#"><img src="../static/image/i1.png" alt=""/>Follow us on Facebook</a></li>
-						<li><a href="#"><img src="../static/image/i2.png" alt=""/>Follow us on Twitter</a></li>
-						<li><a href="#"><img src="../static/image/i3.png" alt=""/>Follow us on Google-plus</a></li>
-						<li><a href="#"><img src="../static/image/i4.png" alt=""/>Follow us on Pinterest</a></li>
-					</div>
-				</div>
-				<div class="clearfix"></div>
+				<p style="font-size:30px;">Admin's entrance. Click&nbsp;&nbsp;<a href="${ctx}/admin/adminlogin">HERE</a></p>
 			</div>
+			<div class="clearfix"></div>
 		</div>
+	</div>
 	</div>
 	<!--//footer-->
 	<div class="footer-bottom">

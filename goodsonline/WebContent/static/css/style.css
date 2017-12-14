@@ -2065,7 +2065,7 @@ span.glyphicon.glyphicon-map-marker {
     font-size: 1em;
 }
 .dropdown-menu.columns-4 {
-    min-width: 500px;
+    min-width: 250px;
     padding: 2em 0em 2em 1em;
 }
 .header-right span.glyphicon {

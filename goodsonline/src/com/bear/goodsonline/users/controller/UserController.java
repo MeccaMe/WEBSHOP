@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bear.goodsonline.entity.Users;
-import com.bear.goodsonline.users.service.UserService;
+import com.bear.goodsonline.users.service.UserServiceImpl;
 
 @Controller
 @RequestMapping("users")
 public class UserController {
 	@Resource
 	
-	private UserService userService;
+	private UserServiceImpl userService;
 //	@RequestMapping("/userlogin")
 //	public String login (@RequestParam("uname") String name,@RequestParam("upassword") String password,HttpSession session,Model model) {
 //		Users user = this.userService.login(name, password);
@@ -42,14 +42,17 @@ public class UserController {
 //		}
 //	}
 	@RequestMapping("/userlogin")
-	public String login(String uname,String upassword) {
+	public String login(String uname,String upassword,
+			HttpSession session,Model model) {
 		Users user = userService.login(uname, upassword);
 		if(user != null) {
+			session.setAttribute("u", user);
 			return "front/index";
 		}else {
 			return "loginregister";
 		}
 	}
+	
 //	@RequestMapping("/loginregister")
 //	private String register(Users user,Model model) {
 //		System.out.println("000");

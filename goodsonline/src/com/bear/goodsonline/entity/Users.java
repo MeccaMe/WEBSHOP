@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 
@@ -21,7 +22,7 @@ public class Users {
 	private String upassword;
 	private String email;
 	private String address;
-//	private Cart cart;
+	private Cart cart;
 //	private Set orderSet= new HashSet<Order>();
 	
 	@Id
@@ -56,14 +57,13 @@ public class Users {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
-//	public Cart getCart() {
-//		return cart;
-//	}
-//	public void setCart(Cart cart) {
-//		this.cart = cart;
-//	}
+	@OneToOne(mappedBy="users")
+	public Cart getCart() {
+		return cart;
+	}
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
 //	@OneToMany(mappedBy="users",targetEntity=Order.class,cascade=CascadeType.ALL)
 //	public Set getOrderSet() {
 //		return orderSet;

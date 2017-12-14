@@ -12,13 +12,25 @@ import com.bear.goodsonline.entity.Page;
 import com.bear.goodsonline.goods.dao.GoodsDaoImpl;
 
 @Service
-@Transactional(readOnly=true)
+@Transactional
 public class GoodsServiceImpl {
 	@Resource
 	private GoodsDaoImpl goodsDaoImpl;
-
-	public List<Goods> listAll(){
-		return this.goodsDaoImpl.findAll();
+/**
+ *查找分页 
+ **/
+	public List<Goods> listAll(int page){
+		return this.goodsDaoImpl.findAll(page);
+	}
+	/**
+	 * 按类别查询
+	 * @return
+	 */
+	public List<Goods> listByType(int typeid,int page){
+		return this.goodsDaoImpl.findByType(typeid,page);
+	}
+	public List<Goods> findTypeId(int typeid){
+		return goodsDaoImpl.findTypeId(typeid);
 	}
 	public Goods findId(int id) {
 		return goodsDaoImpl.findId(id);
@@ -32,35 +44,47 @@ public class GoodsServiceImpl {
 	public void addOneGoods(Goods g) {
 		this.goodsDaoImpl.saveGoods(g);
 	}
-
+/**
+ * 得到页码数
+ * @return
+ */
 	public int getPageCount() {
 		 return (int) Math.ceil((this.goodsDaoImpl.findCount()/6));		
 	}
+/**
+ * 分类查询页码数
+ */
+	public int getTypeGoodsPageCount(int typeid) {
+		return (int) Math.ceil((this.goodsDaoImpl.findTypeGoodsCount(typeid))/3);
+	}	
 	
-//	/**
-//     * 分页查询 
-//     * @param currentPage 当前页号：现在显示的页数
-//     * @param pageSize 每页显示的记录条数
-//     * @return 封闭了分页信息(包括记录集list)的Bean
-//     * */
-//    @SuppressWarnings("unchecked")
-//    public Page queryForPage(int currentPage,int pageSize) {
-//        // TODO Auto-generated method stub
-//
-//        Page page = new Page();        
-//        //总记录数
-//      int allRow = this.goodsDaoImpl.findCount();
-//        //当前页开始记录
-//        int offset = page.countOffset(currentPage,pageSize);  
-//        //分页查询结果集
-//        List<Goods> list = this.goodsDaoImpl.queryForPage(offset, pageSize); 
-//
-//        page.setPageNo(currentPage);
-//        page.setPageSize(pageSize);
-//        page.setTotalRecords(allRow);
-//        page.setList(list);
-//        
-//        return page;
-//    }
+/**admin**/
+	public List<Goods> findAll(){
+		List<Goods> list = goodsDaoImpl.select();	
+		return list;
+	}
+	public boolean addNewGoods(Goods goods) {
+		return goodsDaoImpl.insert(goods);
+	}
+	public boolean deleteGoods(int id) {
+		return goodsDaoImpl.delete(id);
+	}
+	
+	public boolean updateGoods(Goods goods) {
+		return goodsDaoImpl.update(goods);
+	}
+	public Goods selectById(int id) {
+		return goodsDaoImpl.selectById(id);
+	}
+	/**
+	 * cart按名字查找
+	 * @param gname
+	 * @return
+	 */
+	public Goods getGoodsById(int id) {
+		// TODO Auto-generated method stub
+		return goodsDaoImpl.findId(id);
+	}
+	
 
 }

@@ -20,7 +20,7 @@ public class Goods {
 	private String img1;
 	private String img2;
 	private String img3;
-	private GoodsType goodsType;
+	private Type type;
 //	private CartItem cartItem;
 	
 	@Id
@@ -67,22 +67,13 @@ public class Goods {
 	public void setImg3(String img3) {
 		this.img3 = img3;
 		}
-	
 	@ManyToOne
 	@JoinColumn(name="typeid")
-	public GoodsType getGoodsType() {
-		return goodsType;
+	public Type getType() {
+		return type;
 	}
-	public void setGoodsType(GoodsType goodsType) {
-		this.goodsType = goodsType;
+	public void setType(Type type) {
+		this.type = type;
 	}
-//	@ManyToOne
-//	@JoinColumn(name="iid")
-//	public CartItem getCartItem() {
-//		return cartItem;
-//	}
-//	public void setCartItem(CartItem cartItem) {
-//		this.cartItem = cartItem;
-//	}
-//	
+
 }

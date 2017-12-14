@@ -56,50 +56,15 @@
 	</head>
 </head>
 <body>
-	<div class="gtco-loader"></div>
-	
+	<div class="gtco-loader"></div>	
 	<div id="page"></div>
-
-	
 	<div class="page-inner"></div>
-	<!-- <nav class="gtco-nav" role="navigation">
-		<div class="gtco-container">
-			
-			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.html">Splash <em>.</em></a></div>
-				</div>
-				<div class="col-xs-8 text-right menu-1">
-					<ul>
-						<li><a href="features.html">Features</a></li>
-						<li><a href="tour.html">Tour</a></li>
-						<li class="has-dropdown">
-							<a href="#">Dropdown</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-						<li><a href="pricing.html">Pricing</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li class="btn-cta"><a href="#"><span>Get started</span></a></li>
-					</ul>
-				</div>
-			</div>
-			
-		</div>
-	</nav> -->
-	
 	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(../static/image/a.jpg)">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0 text-left">
-					
-
-					<div class="row row-mt-15em">
+				<div class="row row-mt-15em">
 						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
 							<span class="intro-text-small">Welcome to TUASHOP</span>
 							<h1>Women own two stomachs,one keeps sweets,another for dinner.</h1>	
@@ -122,8 +87,8 @@
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="username">Email </label>
-														<input name="email" type="text" class="form-control" id="username">
+														<label for="email">Email </label>
+														<input name="email" type="text" class="form-control" id="email">
 													</div>
 												</div>
 												<div class="row form-group">
@@ -138,7 +103,6 @@
 														<input name="address" type="text" class="form-control" id="password2">
 													</div>
 												</div>
-
 												<div class="row form-group">
 													<div class="col-md-12">
 														<input type="submit" class="btn btn-primary" value="Sign up">
@@ -146,7 +110,6 @@
 												</div>
 											</form>	
 										</div>
-
 										<div class="tab-content-inner" data-content="login">
 											<form action="${ctx }/users/userlogin" method="post">
 												<div class="row form-group">
@@ -161,7 +124,6 @@
 														<input name="upassword" type="password" class="form-control" id="password">
 													</div>
 												</div>
-
 												<div class="row form-group">
 													<div class="col-md-12">
 														<input type="submit" class="btn btn-primary" value="Login">
@@ -169,21 +131,15 @@
 												</div>
 											</form>	
 										</div>
-
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-							
-					
+					</div>					
 				</div>
 			</div>
 		</div>
 	</header>
-	
-	
-	
 	<!-- jQuery -->
 	<script src="../static/js/jqueryl.min.js"></script>
 	<!-- jQuery Easing -->

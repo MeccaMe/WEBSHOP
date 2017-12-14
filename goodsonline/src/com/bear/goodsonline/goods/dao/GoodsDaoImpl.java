@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
 
 import com.bear.goodsonline.entity.Goods;
@@ -16,23 +17,53 @@ import com.bear.goodsonline.entity.Goods;
 public class GoodsDaoImpl {
 	@Resource
 	private SessionFactory sessionFactory;
-	
-	public List<Goods> findAll(){
+	/**
+	 * 查询所有商品
+	 * @return
+	 */
+	public List<Goods> findAll(int page){
 		Query q = this.sessionFactory.getCurrentSession().createQuery("from Goods");
-		q.setFirstResult(0);
+		q.setFirstResult((page-1)*6);
 		q.setMaxResults(6);
 		return q.list();
 	}
+	/**
+	 * 按类别查询
+	 */
+	public List<Goods> findByType(int typeid,int page){
+		Query q = this.sessionFactory.getCurrentSession().createQuery("from Goods where typeid="+typeid);
+		q.setFirstResult((page-1)*6);
+		q.setMaxResults(6);
+		return q.list();
+	}
+	public List<Goods> findTypeId(int typeid){
+		Query q = this.sessionFactory.getCurrentSession().createQuery("from Goods where typeid="+typeid);
+		return q.list();
+	}
 	public Goods findId(int id) {
-//		Query q = this.sessionFactory.getCurrentSession().createQuery("select Goods ")
 		Session session = sessionFactory.getCurrentSession();
 		Goods goods = (Goods)session.get(Goods.class, id);
 		return goods;
 	}
+	/**
+	 * 查询商品数
+	 * @return
+	 */
 	public int findCount() {
-		Query fc=this.sessionFactory.getCurrentSession().createQuery("select count(id) from Goods");	
-		return Integer.parseInt(fc.toString());
-		 
+		Query fc=this.sessionFactory.getCurrentSession().createQuery("select count(gid) from Goods");	
+		Number number = (Number)fc.uniqueResult();
+		int count = number.intValue();
+		return count;		 
+	}
+	/**
+	 * 按类别查询总数
+	 * @param g
+	 */
+	public int findTypeGoodsCount(int typeid) {
+		Query qc=this.sessionFactory.getCurrentSession().createQuery("select COUNT(gid) from Goods where typeid="+typeid);
+		Number number = (Number)qc.uniqueResult();
+		int count = number.intValue();
+		return count;
 	}
 	public void deleteGoods(Goods g) {
 		this.sessionFactory.getCurrentSession().delete(g);
@@ -43,28 +74,39 @@ public class GoodsDaoImpl {
 	public void saveGoods(Goods g) {
 		this.sessionFactory.getCurrentSession().save(g);
 	}
-	//?????以下
-	/**
-     * 分页查询
-     * @param hql 查询的条件
-     * @param offset 开始记录
-     * @param length 一次查询几条记录
-     * @return 返回查询记录集合
-     */
-   @SuppressWarnings("unchecked")
-   public List<Goods> queryForPage(int offset, int length) {
-       // TODO Auto-generated method stub
-       List<Goods> entitylist=null;
-       try{
-           Query query = this.sessionFactory.getCurrentSession().createQuery("from Course");
-           query.setFirstResult(offset);
-           query.setMaxResults(length);
-           entitylist = query.list();
-           
-       }catch(RuntimeException re){
-           throw re;
-       }
-       
-       return entitylist;
-   }
+	/**admin**/
+	public List<Goods> select(){
+		Session session = sessionFactory.getCurrentSession();
+		Query query = session.createQuery("from Goods");
+		List<Goods> list = query.list();
+		return list;
+	}
+	public boolean insert(Goods goods) {
+		Session session = sessionFactory.getCurrentSession();
+		session.save(goods);
+		return true;
+	}
+	public boolean delete(int id) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		Query query = session.createQuery("delete from Goods where gid=?");
+		query.setParameter(0, id);
+		query.executeUpdate();
+		
+		tx.commit();
+		session.close();
+		return true;
+	}
+	
+	public boolean update(Goods goods) {
+		Session session = sessionFactory.getCurrentSession();
+		session.update(goods);
+		return true;
+		
+	}
+	public Goods selectById(int id) {
+		Session session = sessionFactory.getCurrentSession();
+		Goods goods = (Goods)session.get(Goods.class,id);
+		return goods;
+	}
 }
