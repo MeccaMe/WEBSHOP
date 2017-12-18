@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
@@ -30,31 +31,51 @@ public class OrderController {
 	private UserServiceImpl userServiceImpl;
 	@Resource
 	private GoodsServiceImpl goodsServiceImpl;
-	private Object cartServiceImpl;
+	private CartServiceImpl cartServiceImpl;
+
 	/**
 	 * 提交order到数据库
 	 */
-	@RequestMapping("/submitOrder")
-	public String SubmitOrder(@RequestParam("gid")Integer gid,@RequestParam("iid")int iid,@RequestParam("img1")String img1,@RequestParam("gname")String gname,
-@RequestParam("uid")String uid,@RequestParam("count")int count,@RequestParam("price")float price,HttpServletResponse response) throws IOException{
-//		Orders order = new Orders();
-//		order.setGid(gid);
-//		order.setGname(gname);
-//		order.setCount(count);
-//		float total=count*price;
-//		order.setTotal(total);
-//		Users u=this.userServiceImpl.findUserById(Integer.parseInt(uid));
-//		order.setUsers(u);
-//	    order.setImg1(img1);
-//	    this.orderServiceImpl.addOneOrder(order);
-		int uuid = Integer.valueOf(uid);
-		Users u = this.userServiceImpl.findUserById(uuid);
-		int ggid = Integer.valueOf(gid);
-		Goods g = this.goodsServiceImpl.getGoodsById(ggid);
-		Orders o = this.orderServiceImpl.getPersonalOrdersById(g,u);
-		//删除购物车中的订单
+//	@RequestMapping("/submitOrder")
+//	public String SubmitOrder(@RequestParam("gid")Integer gid,@RequestParam("iid")int iid,@RequestParam("img1")String img1,@RequestParam("gname")String gname,
+//@RequestParam("uid")String uid,@RequestParam("count")int count,@RequestParam("price")float price,HttpServletResponse response) throws IOException{
+////		Orders order = new Orders();
+////		order.setGid(gid);
+////		order.setGname(gname);
+////		order.setCount(count);
+////		float total=count*price;
+////		order.setTotal(total);
+////		Users u=this.userServiceImpl.findUserById(Integer.parseInt(uid));
+////		order.setUsers(u);
+////	    order.setImg1(img1);
+////	    this.orderServiceImpl.addOneOrder(order);
+//		int uuid = Integer.valueOf(uid);
+//		Users u = this.userServiceImpl.findUserById(uuid);
+//		int ggid = Integer.valueOf(gid);
+//		Goods g = this.goodsServiceImpl.getGoodsById(ggid);
+//		Orders o = this.orderServiceImpl.getPersonalOrdersById(g,u);
+//		//删除购物车中的订单
+//		int iid1 = Integer.valueOf(iid);
+//		CartItem ci = this.cartServiceImpl.findById(iid1);	
+//		this.cartServiceImpl.deleteOne(ci);
+//		return "";
+//	}
+	@RequestMapping("/addOrders")
+	public String saveOrder(HttpServletResponse response,HttpServletRequest request) {
+		String uname = request.getParameter("uname");
+		Users u = this.userServiceImpl.findUserByName(uname);
+		this.orderServiceImpl.saveOrders(u);
+		return "redirect:showOrders?uname="+uname;
+		
+	}
+	@RequestMapping("/showOrders")
+	public String showOrders(@RequestParam("uname")String uname,HttpServletResponse response,HttpSession session,Model model) {
+		Users u = this.userServiceImpl.findUserByName(uname);
+		List<Orders> list = orderServiceImpl.getOrdersByUserId(u);
+		model.addAttribute("oList",list);
+		return "front/orders";
+				
 		
 		
-		return "";
 	}
 }

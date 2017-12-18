@@ -49,10 +49,9 @@ public class CartServiceImpl {
 	/**
 	 * 删除购物车商品
 	 */
-//	public List<CartItem> deleteOne(Users u, String gname) {
-//		return this.cartDaoImpl.deleteOne(u, gname);
-//	}
-
+	public void deleteOne(CartItem ci) {
+		this.cartDaoImpl.deleteShop(ci);
+	}
 	/**
 	 * 总价钱
 	 * @param u
@@ -80,5 +79,13 @@ public class CartServiceImpl {
 		// TODO Auto-generated method stub
 		List<CartItem> list = cartDaoImpl.findItemByUserId(u);
 		return list;
+	}
+	/**
+     * 通过id查找订单
+     * @param id
+     * @return
+     */
+	public CartItem findById(int id) {
+		return this.cartDaoImpl.findById(id);
 	}
 }

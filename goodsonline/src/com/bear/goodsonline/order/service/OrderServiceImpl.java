@@ -25,14 +25,26 @@ public class OrderServiceImpl {
 	public List<Orders> listAll(int page,int userid){
 		return this.orderDaoImpl.findAll(page,userid);
 	}
+	public void saveOrders(Users u) {
+		this.orderDaoImpl.saveOrder(u);
+	}
+	public List<Orders> getOrdersByUserId(Users u){
+		List<Orders> list = orderDaoImpl.findByUserId(u);
+		return list;
+	}
 	/**
 	 * 增加订单
 	 * @param order
 	 */
-	public void addOneOrder(Goods g,Users u) {
-		this.orderDaoImpl.saveOrder(g, u);
-	}
+//	public void addOneOrder(Goods g,Users u) {
+//		this.orderDaoImpl.saveOrder(g, u);
+//	}
 	public Orders getPersonalOrdersById(Goods g, Users u) {
 		return this.orderDaoImpl.getOrdersById(g,u);
 	}
+//	public List<CartItem> getCartItemByUserId(Users u) {
+//		// TODO Auto-generated method stub
+//		List<CartItem> list = cartDaoImpl.findItemByUserId(u);
+//		return list;
+//	}
 }

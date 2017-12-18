@@ -24,19 +24,20 @@
 					<div class="col-md-8">
 						<table class="table shop-cart">
 							<tbody>
-								<tr class="cart_item">
+								<c:forEach items="${oList}" var="o">
+									<tr class="cart_item">
 									<td class="product-remove">
 										<a href="#" class="remove">×</a>
 									</td>
 									<td class="product-thumbnail">
 										<a href="shop-detail.html">
-											<img src="${ctx}/static/image/${orders.img1}" alt="">
+											<img src="${ctx}/static/image/${o.img1}" alt="">
 										</a>
 									</td>
 									<td class="product-info">
-										<a>${orders.gname } </a>
+										<a>${o.gname } </a>
 										<span class="sub-title">Price for each:</span>
-										<span class="amount">$${order.price }</span>
+										<span class="amount">$${o.price }</span>
 									</td>
 									<td class="product-quantity">
 										<div class="quantity">
@@ -44,9 +45,12 @@
 										</div>
 									</td>
 									<td class="product-subtotal">
-										<span class="amount">$${orders.price }</span>
+										<span class="amount">$${o.price }</span>
 									</td>
 								</tr>
+								
+								</c:forEach>
+								
 							</tbody>
 						</table>
 					</div>
@@ -56,7 +60,7 @@
 								<tbody>
 									<tr class="cart-subtotal">
 										<th>Total Costs</th>
-										<td>$${orders.total }</td>
+										<td>$${o.total }</td>
 									</tr>
 								</tbody>
 							</table>
