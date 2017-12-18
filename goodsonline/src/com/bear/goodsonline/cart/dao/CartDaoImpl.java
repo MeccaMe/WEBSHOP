@@ -34,7 +34,9 @@ public class CartDaoImpl {
 		ci.setCount(1);
 		ci.setTotal(g.getPrice());
 		ci.setGoods(g);
-	
+
+		
+		
 		this.sessionFactory.getCurrentSession().save(ci);
 	}
 	
@@ -55,7 +57,9 @@ public class CartDaoImpl {
 		List<CartItem> list = query.list();
 		return list;
 		
-	}	
+	}
+	
+	
 	/**
 	 * 增加购物车商品
 	 */
@@ -79,7 +83,8 @@ public class CartDaoImpl {
 		q.setParameter(1, g.getGid());
 		cartItem = (CartItem)q.uniqueResult();
 		return cartItem;
-	}		
+	}
+		
 //		for (CartItem cartItem : list) {
 //			if(cartItem.getGname().equals(g.getGname())) {
 //				return cartItem;
@@ -93,18 +98,21 @@ public class CartDaoImpl {
 	 * @param gname
 	 * @return
 	 */
-	public void deleteShop(CartItem ci) {
-		this.sessionFactory.getCurrentSession().delete(ci);
-	}
-	/**
-	 * 通过订单编号查找订单
-	 * @param id
-	 * @return
-	 */
-	public CartItem findById(int id) {
-		CartItem ci=this.sessionFactory.getCurrentSession().get(CartItem.class,id);
-		return ci;		
-	}
+//	public List<CartItem> deleteOne(Users u,String gname) {
+//		Set<CartItem> items = u.getCart().getItems();
+//		ArrayList<CartItem> cilist = new ArrayList<CartItem>(items);
+//		for (int i = 0;i < cilist.size();i ++) {
+//			CartItem ci = cilist.get(i);
+//			if(ci.getGname().equals(gname)) {
+//				this.sessionFactory.getCurrentSession().delete(ci);
+//				cilist.remove(ci);
+//				i--;
+//			}
+//		}
+//		return cilist;
+//	}
+//	
+//	
 //	public double showSumPrice(Users u) {
 //		CartItem c = u.getCartItem();
 //		Query q = this.sessionFactory.getCurrentSession().createQuery("select sum(total) from CartItem ci where cartId =:cartId");

@@ -77,13 +77,13 @@ public class Orders {
 	public void setUsers(Users users) {
 		this.users = users;
 	}
-//	@ManyToOne
-//	@JoinColumn(name="uid")
-//	public Users getUser() {
-//		return user;
-//	}
-//	public void setUser(Users user) {
-//		this.user = user;
-//	}
-//	
+	@ManyToOne
+	@JoinColumn(name="uid")
+	public Users getUser() {
+		return user;
+	}
+	public void setUser(Users user) {
+		this.user = user;
+	}
+	
 }

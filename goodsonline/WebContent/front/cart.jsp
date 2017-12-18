@@ -216,13 +216,12 @@
 								</tr>
 								<c:forEach items="${ciList}" var="ci">
 								<tr class="cart_item">
-								<!-- 删除  -->
 									<td class="product-remove">
 										<a href="#" class="remove">×</a>
 									</td>
 									<td class="product-thumbnail">
 										<a href="${ctx }/front/single">
-											<img height="200px" width="200px" src="${ctx }/static/image/${ci.img1}" alt="">
+											<img src="${ctx }/static/image/${ci.img1}" alt="">
 										</a>
 									</td>
 									<td class="product-info">
@@ -232,7 +231,7 @@
 									<td class="product-quantity">
 										<div class="quantity">
 											count:<h4>${ci.count} </h4>
-											<!-- input id="qty-2" type="number" min="0" name="number" value="1" class="input-text qty text" size="4"-->
+											<input id="qty-2" type="number" min="0" name="number" value="1" class="input-text qty text" size="4">
 										</div>
 									</td>
 									<td class="product-subtotal">
@@ -254,7 +253,7 @@
 								<tr>
 									<td colspan="5" class="actions">
 										<a class="item_add items" href="${ctx }/goods/list"> Continue Shopping</a>
-										<a href="${ctx }/order/addOrders?uname=${u.uname}"><input type="button" class="item_add items" name="update_cart" value="Submit Cart" /></a>
+										<a href="${ctx }/front/orders.jsp"><input type="button" class="item_add items" name="update_cart" value="Submit Cart" /></a>
 									</td>
 								</tr>
 							</tbody>
