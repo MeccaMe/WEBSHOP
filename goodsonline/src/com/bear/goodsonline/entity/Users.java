@@ -1,6 +1,8 @@
 package com.bear.goodsonline.entity;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -11,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.criteria.Order;
 
 
 @Entity
@@ -22,9 +25,23 @@ public class Users {
 	private String upassword;
 	private String email;
 	private String address;
-	private Cart cart;
-//	private Set orderSet= new HashSet<Order>();
+	private Set<CartItem> cartSet = new HashSet<>();
+	private Set<Orders> orderSet= new HashSet<>();
 	
+	@OneToMany(mappedBy="user",targetEntity=CartItem.class,cascade=CascadeType.ALL)
+	public Set<Orders> getOrderSet() {
+		return orderSet;
+	}
+	public void setOrderSet(Set<Orders> orderSet) {
+		this.orderSet = orderSet;
+	}
+	@OneToMany(mappedBy="user",targetEntity=CartItem.class,cascade=CascadeType.ALL)
+	public Set getCartSet() {
+		return cartSet;
+	}
+	public void setCartSet(Set cartSet) {
+		this.cartSet = cartSet;
+	}
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public int getUid() {
@@ -57,13 +74,9 @@ public class Users {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	@OneToOne(mappedBy="users")
-	public Cart getCart() {
-		return cart;
-	}
-	public void setCart(Cart cart) {
-		this.cart = cart;
-	}
+	
+
+	
 //	@OneToMany(mappedBy="users",targetEntity=Order.class,cascade=CascadeType.ALL)
 //	public Set getOrderSet() {
 //		return orderSet;

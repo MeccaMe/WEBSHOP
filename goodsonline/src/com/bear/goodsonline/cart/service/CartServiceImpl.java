@@ -29,9 +29,9 @@ public class CartServiceImpl {
 	/**
 	 * 查找购物车商品
 	 */
-	public List<CartItem> getItemByCartName(Users u) {
-		return this.cartDaoImpl.getItemByCartId(u);
-	}
+//	public List<CartItem> getItemByCartName(Users u) {
+//		return this.cartDaoImpl.getItemByCartName(u);
+//	}
 
 	/**
 	 * 增加购物车商品
@@ -42,42 +42,50 @@ public class CartServiceImpl {
 	/**
 	 * 按名称查找购物车商品
 	 */
-	public CartItem getPersonalCartItemByName(Goods g, Users u) {
-		return this.cartDaoImpl.getCartItemByName(g, u);
+	public CartItem getPersonalCartItemById(Goods g, Users u) {
+		return this.cartDaoImpl.getCartItemById(g, u);
 	}
 
 	/**
 	 * 删除购物车商品
 	 */
-	public List<CartItem> deleteOne(Users u, String gname) {
-		return this.cartDaoImpl.deleteOne(u, gname);
+	public void deleteOne(CartItem ci) {
+		this.cartDaoImpl.deleteShop(ci);
 	}
-
 	/**
 	 * 总价钱
 	 * @param u
 	 * @return
 	 */
-	public double showSumPrice(Users u) {
-		return this.cartDaoImpl.showSumPrice(u);
-	}
-
-	/**
-	 * 清空购物车
-	 * @param u
-	 * @return
-	 */
-	public List<CartItem> cleanUserCart(Users u) {
-		return this.cartDaoImpl.cleanUserCart(u);
-	}
-	/**
-	 * 按名字查找
-	 * @param g
-	 * @param u
-	 * @return
-	 */
-	public CartItem getCartItemByName(Goods g, Users u) {
+//	public double showSumPrice(Users u) {
+//		return this.cartDaoImpl.showSumPrice(u);
+//	}
+//
+//	/**
+//	 * 清空购物车
+//	 * @param u
+//	 * @return
+//	 */
+//	public List<CartItem> cleanUserCart(Users u) {
+//		return this.cartDaoImpl.cleanUserCart(u);
+//	}
+//	/**
+//	 * 按名字查找
+//	 * @param g
+//	 * @param u
+//	 * @return
+//	 */
+	public List<CartItem> getCartItemByUserId(Users u) {
 		// TODO Auto-generated method stub
-		return null;
+		List<CartItem> list = cartDaoImpl.findItemByUserId(u);
+		return list;
+	}
+	/**
+     * 通过id查找订单
+     * @param id
+     * @return
+     */
+	public CartItem findById(int id) {
+		return this.cartDaoImpl.findById(id);
 	}
 }

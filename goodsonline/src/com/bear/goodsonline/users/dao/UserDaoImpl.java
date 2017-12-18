@@ -45,11 +45,11 @@ public class UserDaoImpl {
 //		return user;
 //	}
 //	
-//	public boolean insert(Users user) {
-//		Session session = sessionFactory.getCurrentSession();
-//		session.save(user);
-//		return true;
-//	}
+	public boolean insert(Users user) {
+		Session session = sessionFactory.getCurrentSession();
+		session.save(user);
+		return true;
+	}
 	public Users selectByName(String uname) {
 		Users user = null;
 		Session session = sessionFactory.openSession();
@@ -57,7 +57,6 @@ public class UserDaoImpl {
 		q.setString(0,uname);
 		user = (Users)q.uniqueResult();
 		return user;
-		
 	}
 //	public Users selectById(int uid) {
 //		Session session = sessionFactory.getCurrentSession();
@@ -65,4 +64,13 @@ public class UserDaoImpl {
 //		return user;
 //		
 //	}
+	/**
+	 * 通过Id查找用户
+	 * @param id
+	 * @return
+	 */
+	public Users findById(int id){
+		Users user=this.sessionFactory.getCurrentSession().get(Users.class, id);
+		return user;
+	}
 }

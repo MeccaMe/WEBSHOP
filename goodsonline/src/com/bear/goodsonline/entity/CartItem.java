@@ -1,19 +1,25 @@
 package com.bear.goodsonline.entity;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name="cartItem")
 public class CartItem {
+	private Users user;
 	private int iid;
 	private String gname;
 	private String img1;
@@ -21,6 +27,7 @@ public class CartItem {
 	private float total; 
 	private int count;
 	private Goods goods;
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public int getIid() {
@@ -29,6 +36,7 @@ public class CartItem {
 	public void setIid(int iid) {
 		this.iid = iid;
 	}
+	
 	public String getGname() {
 		return gname;
 	}
@@ -67,6 +75,16 @@ public class CartItem {
 	public void setGoods(Goods goods) {
 		this.goods = goods;
 	}
+	@ManyToOne
+	@JoinColumn(name="uid")
+	public Users getUser() {
+		return user;
+	}
+	public void setUser(Users user) {
+		this.user = user;
+	}
+	
 
+	
 	
 }

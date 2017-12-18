@@ -2,6 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="ctx" value="${pageContext.request.contextPath }"/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Check Orders</title>
 <link rel="stylesheet" href="${ctx}/static/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="${ctx}/static/css/font-awesome.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="${ctx}/static/css/ionicons.min.css" type="text/css" media="all" />
@@ -19,20 +24,20 @@
 					<div class="col-md-8">
 						<table class="table shop-cart">
 							<tbody>
-								<tr class="cart_item">
+								<c:forEach items="${oList}" var="o">
+									<tr class="cart_item">
 									<td class="product-remove">
 										<a href="#" class="remove">×</a>
 									</td>
 									<td class="product-thumbnail">
 										<a href="shop-detail.html">
-											<c:set var="url" value="${goods.img1 }"/>
-											<img src="${ctx}/static/image/${url}" alt="">
+											<img src="${ctx}/static/image/${o.img1}" alt="">
 										</a>
 									</td>
 									<td class="product-info">
-										<a href="${ctx }/goods/single?">Black Hoodie</a>
+										<a>${o.gname } </a>
 										<span class="sub-title">Price for each:</span>
-										<span class="amount">$${cart.price }</span>
+										<span class="amount">$${o.price }</span>
 									</td>
 									<td class="product-quantity">
 										<div class="quantity">
@@ -40,9 +45,12 @@
 										</div>
 									</td>
 									<td class="product-subtotal">
-										<span class="amount">$2.00</span>
+										<span class="amount">$${o.price }</span>
 									</td>
 								</tr>
+								
+								</c:forEach>
+								
 							</tbody>
 						</table>
 					</div>
@@ -52,7 +60,7 @@
 								<tbody>
 									<tr class="cart-subtotal">
 										<th>Total Costs</th>
-										<td>$${total }</td>
+										<td>$${o.total }</td>
 									</tr>
 								</tbody>
 							</table>

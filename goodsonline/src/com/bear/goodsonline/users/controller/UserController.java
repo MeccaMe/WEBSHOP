@@ -30,17 +30,16 @@ public class UserController {
 //			return "loginregister";
 //		}
 //	}
-//	@RequestMapping("/loginregister")
-//	public String register (@RequestParam("uname") String name,@RequestParam("upassword") String password,HttpSession session,Model model) {
-//		Users user = this.userService.login(name, password);
-//		if(user!=null) {
-//			session.setAttribute("user", user);
-//			return "index";
-//		}else {
-//			model.addAttribute("errorinfo","不正确");
-//			return "loginregister";
-//		}
-//	}
+	@RequestMapping("/register")
+	public String register (Users user,Model model) {
+		boolean result = userService.addNewUser(user);
+		if(result) {
+			return "front/loginregister";
+		}else {
+			return "front/loginregister";
+		}
+		
+	}
 	@RequestMapping("/userlogin")
 	public String login(String uname,String upassword,
 			HttpSession session,Model model) {
@@ -49,7 +48,7 @@ public class UserController {
 			session.setAttribute("u", user);
 			return "front/index";
 		}else {
-			return "loginregister";
+			return "front/loginregister";
 		}
 	}
 	

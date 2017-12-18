@@ -35,13 +35,21 @@ public class UserServiceImpl {
 //	public Users login(String username,String password) {
 //		return userDao.login(username, password);
 //	}
-//	public boolean addNewUser(Users user) {
-//		return userDao.insert(user);
-//	}
+	public boolean addNewUser(Users user) {
+		return userDaoImpl.insert(user);
+	}
 	/**
 	 * 按名字查找
 	 */
 	public Users findUserByName(String uname) {
 		return userDaoImpl.selectByName(uname);
+	}
+	/**
+	 * 通过id查找用户
+	 * @param id
+	 * @return
+	 */
+	public Users findUserById(int id) {
+		return this.userDaoImpl.findById(id);
 	}
 }

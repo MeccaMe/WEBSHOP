@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -31,45 +32,48 @@ public class CartController {
 	 * 加入购物车
 	 */
 	@RequestMapping("/addCart")
-	public void insertCartItem(@RequestParam("gid")String gid,@RequestParam("uname")String uname,HttpServletResponse response) throws IOException {
+	public String insertCartItem(@RequestParam("gid")String gid,@RequestParam("uname")String uname,HttpServletResponse response) throws IOException {
 		Users u = this.userServiceImpl.findUserByName(uname);
 		int id = Integer.valueOf(gid);
 		Goods g = this.goodsServiceImpl.getGoodsById(id);
 
-		CartItem ci = this.cartServiceImpl.getCartItemByName(g, u);
-		if(ci == null) {
-			this.cartServiceImpl.insertCartItem(g, u);
-		}else {
+		CartItem ci = this.cartServiceImpl.getPersonalCartItemById(g, u);
+		if(ci != null) {
 			this.cartServiceImpl.addOne(ci);
+			
+		}else {
+			this.cartServiceImpl.insertCartItem(g, u);
 		}
-		response.sendRedirect("front/list");
+		return "redirect:../goods/single?goodsId="+gid;
 	}
 	/**
 	 * 在购物车中展示
 	 */
 	@RequestMapping("/showInCart")
-	public void showInCart(@RequestParam("uname")String uname,HttpServletResponse response,HttpSession session) throws IOException {
+	public String showInCart(@RequestParam("uname")String uname,HttpServletResponse response,HttpSession session,Model model) {
 		Users u = this.userServiceImpl.findUserByName(uname);
-
-		List<CartItem> ciList = this.cartServiceImpl.getItemByCartName(u);
-		session.setAttribute("ciList", ciList);
-		double sumprice = this.cartServiceImpl.showSumPrice(u);
-		session.setAttribute("sumprice", sumprice);
-		response.sendRedirect("/goodsonline/front/cart.jsp");
+		List<CartItem> list = cartServiceImpl.getCartItemByUserId(u);
+		model.addAttribute("ciList",list);
+		return "front/cart";
+//		List<CartItem> ciList = this.cartServiceImpl.getPersonalCartItemById(g, u);
+//		session.setAttribute("ciList", ciList);
+//		double sumprice = this.cartServiceImpl.showSumPrice(u);
+//		session.setAttribute("sumprice", sumprice);
+//		response.sendRedirect("/goodsonline/front/cart.jsp");
 	}
 	/**
 	 * 删除商品
 	 */
-	@RequestMapping("/deleteOne")
-	public void deleteOne(@RequestParam("uname")String uname,@RequestParam("gname")String gname,HttpServletResponse response,HttpSession session) throws IOException {
-		Users u = this.userServiceImpl.findUserByName(uname);
-
-		List<CartItem> ciList = this.cartServiceImpl.deleteOne(u,gname);
-		session.setAttribute("ciList", ciList);
-		double sumprice = this.cartServiceImpl.showSumPrice(u);
-		session.setAttribute("sumprice", sumprice);
-		response.sendRedirect("/goodsonline/front/cart.jsp");
-	}
+//	@RequestMapping("/deleteOne")
+//	public void deleteOne(@RequestParam("uname")String uname,@RequestParam("gname")String gname,HttpServletResponse response,HttpSession session) throws IOException {
+//		Users u = this.userServiceImpl.findUserByName(uname);
+//
+//		List<CartItem> ciList = this.cartServiceImpl.deleteOne(u,gname);
+//		session.setAttribute("ciList", ciList);
+//		double sumprice = this.cartServiceImpl.showSumPrice(u);
+//		session.setAttribute("sumprice", sumprice);
+//		response.sendRedirect("/goodsonline/front/cart.jsp");
+//	}
 	/**
 	 * AJAX?更改商品个数
 	 */
@@ -80,16 +84,16 @@ public class CartController {
 	/**
 	 * 清空购物车
 	 */
-	@RequestMapping("/cleanUserCart")
-	public void cleanUserCart(@RequestParam("uname")String uname,HttpServletResponse response,HttpSession session) throws IOException {
-		Users u = this.userServiceImpl.findUserByName(uname);
-
-		List<CartItem> ciList = this.cartServiceImpl.cleanUserCart(u);
-		session.setAttribute("ciList", ciList);
-		double sumprice = this.cartServiceImpl.showSumPrice(u);
-		session.setAttribute("sumprice", sumprice);
-		response.sendRedirect("/goodsonline/front/cart.jsp");
-	}
+//	@RequestMapping("/cleanUserCart")
+//	public void cleanUserCart(@RequestParam("uname")String uname,HttpServletResponse response,HttpSession session) throws IOException {
+//		Users u = this.userServiceImpl.findUserByName(uname);
+//
+//		List<CartItem> ciList = this.cartServiceImpl.cleanUserCart(u);
+//		session.setAttribute("ciList", ciList);
+//		double sumprice = this.cartServiceImpl.showSumPrice(u);
+//		session.setAttribute("sumprice", sumprice);
+//		response.sendRedirect("/goodsonline/front/cart.jsp");
+//	}
 
 	
 }

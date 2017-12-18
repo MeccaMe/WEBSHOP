@@ -9,6 +9,6 @@
 <title>Pay</title>
 </head>
 <body>
-    请选择支付方式
+    <h3 align="center">支付完成请返回<a href="index.jsp">首页</a></h3>
 </body>
 </html>

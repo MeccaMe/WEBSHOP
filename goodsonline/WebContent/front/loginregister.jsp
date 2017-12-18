@@ -78,7 +78,7 @@
 									</ul>
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
-											<form action="${ctx}/users/loginregister" method="post">
+											<form action="${ctx}/users/register" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="username">Username </label>

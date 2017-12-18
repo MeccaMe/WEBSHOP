@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.bear.goodsonline.entity.Goods;
-import com.bear.goodsonline.entity.Page;
+//import com.bear.goodsonline.entity.Page;
 import com.bear.goodsonline.goods.dao.GoodsDaoImpl;
 
 @Service

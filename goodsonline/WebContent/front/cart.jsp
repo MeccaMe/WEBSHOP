@@ -149,11 +149,11 @@
 					</div>
 				</div>
 				<div class="header-right cart">
-					<a href="${ctx }/front/cart.jsp"><span
+					<a href="${ctx }/cart/showInCart?uname=${u.uname}"><span
 						class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
 					<div class="cart-box">
 						<h4>
-							<a href="${ctx }/front/cart.jsp"> <span class="simpleCart_total">
+							<a href="${ctx }/cart/showInCart?uname=${u.uname}"> <span class="simpleCart_total">
 									$0.00 </span> (<span id="simpleCart_quantity"
 								class="simpleCart_quantity"> 0 </span>)
 							</a>
@@ -210,42 +210,51 @@
 									<td class="product-subtotal">
 										<span class="amount">price</span>
 									</td>
+									<td class="product-subtotal">
+										<span class="amount">total</span>
+									</td>
 								</tr>
+								<c:forEach items="${ciList}" var="ci">
 								<tr class="cart_item">
+								<!-- 删除  -->
 									<td class="product-remove">
 										<a href="#" class="remove">×</a>
 									</td>
 									<td class="product-thumbnail">
 										<a href="${ctx }/front/single">
-										<c:set var="url" value="${cartitem.img1 }"/>
-											<img src="${ctx }/static/images/${url}" alt="">
+											<img height="200px" width="200px" src="${ctx }/static/image/${ci.img1}" alt="">
 										</a>
 									</td>
 									<td class="product-info">
 										<a href="${ctx }/front/single"></a>
-										<span class="sub-title">${cartitem.gname } ${users.uid }</span>
+										<span class="sub-title">${ci.gname }</span>
 									</td>
 									<td class="product-quantity">
 										<div class="quantity">
-											count:<h4>${cartitem.count} </h4>
-											<input id="qty-2" type="number" min="0" name="number" value="1" class="input-text qty text" size="4">
+											count:<h4>${ci.count} </h4>
+											<!-- input id="qty-2" type="number" min="0" name="number" value="1" class="input-text qty text" size="4"-->
 										</div>
 									</td>
 									<td class="product-subtotal">
-										<span class="amount">$${cartitem.price }</span>
+										<span class="amount">$${ci.price }</span>
+									</td>
+									<td class="product-subtotal">
+										<span class="amount">$${ci.total }</span>
 									</td>
 								</tr>
+								</c:forEach>
 								<tr>
-									<td>批量删除</td>
+									
 									<td></td>
 									<td></td>
 									<td></td>
+									
 									<td>total costs：</td>
 								</tr>
 								<tr>
 									<td colspan="5" class="actions">
 										<a class="item_add items" href="${ctx }/goods/list"> Continue Shopping</a>
-										<a href="${ctx }/front/orders.jsp"><input type="button" class="item_add items" name="update_cart" value="Submit Cart" /></a>
+										<a href="${ctx }/order/addOrders?uname=${u.uname}"><input type="button" class="item_add items" name="update_cart" value="Submit Cart" /></a>
 									</td>
 								</tr>
 							</tbody>
@@ -257,6 +266,7 @@
 			</div>		
 		</div>
 	</div>
+	
 	<!--//checkout-->	
 	<!--footer-->
 

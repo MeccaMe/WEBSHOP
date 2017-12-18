@@ -30,23 +30,29 @@ public class GoodsController {
 	 * 跳转list
 	**/
 	@RequestMapping("/list")	
-	public String list(HttpServletResponse response,HttpSession session,@RequestParam(value="pageNum",defaultValue="1")Integer page,HttpServletRequest request,Model model) {
+	public String list(HttpServletResponse response,@RequestParam(value="pageNum",defaultValue="1")Integer page,HttpServletRequest request,Model model) {
 		List<Goods> list = this.goodsServiceImpl.listAll(page);
 		model.addAttribute("list",list);
+		
 		//分页
 		int pageCount=this.goodsServiceImpl.getPageCount();
 		//存到request里比存到session快
-		 session.setAttribute("pageCount",pageCount);
+//		 session.setAttribute("pageCount",pageCount);
+		model.addAttribute("pageCount",pageCount);
 		 int pageNum = 1;
-		 session.setAttribute("pageNum",pageNum);
+//		 session.setAttribute("pageNum",pageNum);
+		 model.addAttribute("pageNum",pageNum);
 		 if(0==pageNum|| pageNum<0) {
-			 session.setAttribute("pageNum",1); 
+//			 session.setAttribute("pageNum",1); 
+			 model.addAttribute("pageNum",1);
 		 }else {
-			 session.setAttribute("pageNum",pageNum);
+//			 session.setAttribute("pageNum",pageNum);
+			 model.addAttribute("pageNum",pageNum);
 			 	}
 		//分类
 		 List<Type> goodsTypeList = this.goodsTypeServiceImpl.listGoodsType();
-		 session.setAttribute("goodsTypeList", goodsTypeList);		 
+//		 session.setAttribute("goodsTypeList", goodsTypeList);	
+		 model.addAttribute("goodsTypeList", goodsTypeList);
 		return "front/list";
 	}
 	/**

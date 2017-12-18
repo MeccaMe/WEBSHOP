@@ -160,11 +160,11 @@
 					</div>
 				</div>
 				<div class="header-right cart">
-					<a href="${ctx }/front/cart.jsp"><span
+					<a href="${ctx }/cart/showInCart?uname=${u.uname}"><span
 						class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
 					<div class="cart-box">
 						<h4>
-							<a href="${ctx }/front/cart.jsp"> <span class="simpleCart_total">
+							<a href="${ctx }/cart/showInCart?uname=${u.uname}"> <span class="simpleCart_total">
 									$0.00 </span> (<span id="simpleCart_quantity"
 								class="simpleCart_quantity"> 0 </span>)
 							</a>
@@ -231,7 +231,7 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<p class="qty"> Qty :  </p><input min="1" type="number" id="quantity" name="quantity" value="1" class="form-control input-small">
+					<p class="qty"> Qty :  </p><input name="count" min="1" type="number" id="quantity"  value="1" class="form-control input-small">
 					<div class="btn_form">
 						<a href="${ctx}/cart/addCart?gid=${goods.gid}&uname=${u.uname}" class="add-cart item_add">ADD TO CART</a>	
 					</div>	

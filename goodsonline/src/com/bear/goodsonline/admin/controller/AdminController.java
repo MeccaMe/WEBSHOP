@@ -47,7 +47,7 @@ public class AdminController {
 //			return "backstage/GoodsForm";
 //		}
 //	}
-//	
+	
 //	@RequestMapping("/deleteadmin")
 //	private String deleteAdmin(Model model,HttpServletRequest request) {
 //		String id = request.getParameter("id");
